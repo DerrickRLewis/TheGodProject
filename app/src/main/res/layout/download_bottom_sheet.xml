@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="5dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="100dp"
+    app:cardPreventCornerOverlap="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:layout_marginStart="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/image"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="18dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Media Title"
+                    android:textColor="@color/material_blue_grey_700"
+                    android:textSize="15sp"
+                    android:clickable="false" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:maxHeight="10dip"
+                    android:minHeight="10dip"
+                    android:progress="1" />
+
+                <TextView
+                    android:id="@+id/download_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/material_blue_grey_700"
+                    android:textSize="13sp"
+                    android:clickable="false" />
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:onClick="pause_resume"
+                android:id="@+id/pause_resume"
+                android:layout_marginStart="5dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:src="@drawable/music_pause_button"
+                android:tint="@color/colorAccent"
+                android:padding="0dp" />
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:onClick="cancel_current_download_warning"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="3dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_cancel_black_24dp"
+                android:tint="@color/colorAccent"
+                android:padding="0dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            android:background="@color/material_grey_200" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

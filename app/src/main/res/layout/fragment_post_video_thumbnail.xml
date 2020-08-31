@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/img_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/worship"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="300dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:src="@drawable/play_btn_big" />
+
+</RelativeLayout>

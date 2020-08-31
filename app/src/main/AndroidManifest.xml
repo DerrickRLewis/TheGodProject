@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="apps.envision.mychurch">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.type.pc"
+        android:required="false" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/jz_network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning, LockedOrientationActivity"
+        tools:targetApi="q">
+        <activity
+            android:name=".ui.activities.HymnsActivity"
+            android:label="@string/title_activity_hymns"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ui.activities.NotesActivity"
+            android:label="@string/title_activity_notes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".socials.UsersDataActivity"
+            android:label="@string/title_activity_notes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.PaystackActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_notes"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activities.StripeActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_notes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.FlutterWavesActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_notes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.GooglePayActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_notes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.CategoriesActivity"
+            android:label="@string/title_activity_categories"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".socials.UsersProfileActivity"
+            android:label="@string/title_activity_categories"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.MessagesCategoryActivity"
+            android:label="@string/title_activity_categories"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.activities.SermonsActivity"
+            android:label="@string/title_activity_categories"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.RadioPlayerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_NoStatusBar" />
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.OnboardingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_NoStatusBar" />
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Main Activity -->
+        <activity
+            android:name=".ui.activities.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_NoStatusBar"
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- register Activity -->
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:label="Gradient Register"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_NoStatusBar"
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- LOGINActivity -->
+        <activity
+            android:name=".ui.activities.ForgotPasswordActivity"
+            android:label="GradientForgotPasswordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_NoStatusBar"
+            android:windowSoftInputMode="stateAlwaysHidden" /> <!-- ForgotPasswordActivity -->
+        <activity
+            android:name=".ui.activities.SearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- search activity -->
+        <activity
+            android:name=".ui.activities.AddPlaylistActivity"
+            android:label="@string/title_activity_playlist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- add media to playlist activity -->
+        <activity
+            android:name=".ui.activities.PlaylistActivity"
+            android:label="@string/title_activity_playlist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.DownloadBibleActivity"
+            android:label="@string/title_activity_playlist"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activities.BibleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- media playlist activity -->
+        <activity
+            android:name=".ui.activities.BibleActivity"
+            android:label="@string/title_activity_playlist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- media playlist activity -->
+        <activity
+            android:name=".ui.activities.BibleHighlightActivity"
+            android:label="@string/title_activity_playlist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- media playlist activity -->
+        <activity
+            android:name=".ui.activities.BookmarkedHymnsActivity"
+            android:label="@string/title_activity_playlist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- media playlist activity -->
+
+        <activity
+            android:name=".socials.FollowUsersActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.DownloadsActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- media download task activity -->
+        <activity
+            android:name=".ui.activities.CommentsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- media download task activity -->
+
+        <activity
+            android:name=".ui.activities.PostsCommentsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- media download task activity -->
+        <activity
+            android:name=".ui.activities.SubscriptionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.EventsViewerActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- media download task activity -->
+        <activity
+            android:name=".ui.activities.InboxViewerActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- media download task activity -->
+        <activity
+            android:name=".ui.activities.NotesViewerActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- media download task activity -->
+        <activity
+            android:name=".ui.activities.SocialsPageActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.WebsitePageActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".socials.EditProfileActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Main Activity -->
+        <activity
+            android:name=".socials.NewPostActivity"
+            android:parentActivityName=".socials.SocialActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Main Activity -->
+
+        <activity
+            android:name=".socials.ProfileActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_NoStatusBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name=".socials.EditPostActivity"
+            android:parentActivityName=".socials.SocialActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Main Activity -->
+        <activity
+            android:name=".socials.SocialActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Main Activity -->
+        <activity
+            android:name=".ui.activities.ActivityVideoPlayer"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".ui.activities.EventsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.NewNotesActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.HymnsViewerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.DevotionalsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activities.LiveStreamsPlayer"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".ui.activities.AudioPlayerActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_NoStatusBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ADMOB_APP_ID" />
+        <meta-data
+            android:name="co.paystack.android.PublicKey"
+            android:value="@string/Paystack_Public_key" />
+
+        <service android:name=".libs.audio_playback.AudioPlayerService" />
+        <service
+            android:exported="true"
+            android:name=".firebase.MyFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/FinestWebViewTheme.Light" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <provider
+            android:name=".utils.FilePickerProvider"
+            android:authorities="${applicationId}.filepicker.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepicker_provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

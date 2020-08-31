@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.activities.CategoriesActivity"
+    tools:showIn="@layout/activity_categories">
+
+    <HorizontalScrollView
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="wrap_content"
+            app:singleSelection="true"
+            android:layout_gravity="center"
+            android:minHeight="250dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/all_messages"
+                android:checkable="true"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all_messages" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/videos"
+                android:checkable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Videos" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/audios"
+                android:checkable="true"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audios" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+
+    <!-- A RecyclerView to display list -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

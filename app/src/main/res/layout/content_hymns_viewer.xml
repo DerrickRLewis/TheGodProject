@@ -1,0 +1,50 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:src="@drawable/worship"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+            android:id="@+id/title"
+            android:maxLines="5"
+            android:layout_gravity="center"
+            android:text="@string/all_messages"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="23sp" />
+
+
+        <apps.envision.mychurch.libs.htmltextview.HtmlTextView
+            android:id="@+id/content"
+            android:layout_gravity="center"
+            android:text="@string/all_messages"
+            android:gravity="center"
+            android:padding="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp" />
+
+
+        <View
+            android:padding="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+</ScrollView>

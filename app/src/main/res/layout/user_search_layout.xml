@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/search_people"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:padding="2dp"
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/search_field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/oval_circle_background"
+        android:inputType="text"
+        android:hint="@string/search_for_people"
+        android:textSize="15sp"
+        android:textColorHint="@color/material_blue_grey_700"
+        android:textColor="@color/material_blue_grey_700" />
+
+
+    <ImageView
+        android:id="@+id/search_users"
+        android:onClick="search_users"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/magnify"
+        android:tint="@color/colorPrimary"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/cancel_users_search"
+        android:onClick="search_users_cancel"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_cancel_black_24dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center" />
+
+</RelativeLayout>

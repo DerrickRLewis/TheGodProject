@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ADMOB_APP_ID" translatable="false">ca-app-pub-6229189630006029~6776293273</string>
+    <string name="Main_Interstitial_AD" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ADMOB_Radio_Banner_AD" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ADMOB_Player_Banner_AD" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ADMOB_Video_Banner_AD" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/screen1" />
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+               android:id="@+id/title"
+               android:layout_marginTop="10dp"
+               android:padding="15dp"
+               android:textColor="@color/black"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+               android:id="@+id/details"
+               android:layout_marginTop="10dp"
+               android:textColor="@color/black"
+               android:paddingStart="15dp"
+               android:paddingEnd="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+
+       </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

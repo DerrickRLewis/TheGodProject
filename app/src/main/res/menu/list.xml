@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/read"
+            android:icon="@drawable/ic_chrome_reader_mode_black_24dp"
+            android:title="@string/read"
+            android:iconTint="@color/primary_dark"/>
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/cloud_search_outline"
+        android:iconTint="@color/primary_dark"
+        android:title="@string/search" />
+
+    <item
+            android:id="@+id/nav_bookmarks"
+            android:icon="@drawable/bookmarks"
+            android:iconTint="@color/primary_dark"
+            android:title="@string/bookmarks" />
+
+    <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_settings_white_24dp"
+            android:iconTint="@color/primary_dark"
+            android:title="@string/settings" />
+
+</menu>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:frisson="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:minHeight="600dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/my_progressBar"
+            android:visibility="gone"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                android:text="@string/post_visibility"
+                android:layout_marginStart="0dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:id="@+id/visibility"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="Public"
+                    android:id="@+id/_public"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:text="Private"
+                    android:layout_marginStart="12dp"
+                    android:id="@+id/_private"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/attachments_layout"
+            android:orientation="horizontal"
+            android:background="@drawable/rectangular_border_background"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+
+
+            <RelativeLayout
+                android:onClick="attach_file"
+                android:background="@drawable/rectangular_border_background"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+
+                <ImageView
+                    android:id="@+id/play"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:tint="@color/material_blue_grey_700"
+                    android:src="@drawable/ic_attach_file_white_24dp"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_marginStart="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/text"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:lines="15"
+            android:maxLines="15"
+            android:maxLength="1000"
+            android:gravity="top|start"
+            android:textSize="17sp"
+            android:hint="@string/share_you_thoughts"
+            android:textColorHint="@color/black"
+            android:textColorHighlight="@color/black"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:minHeight="400dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

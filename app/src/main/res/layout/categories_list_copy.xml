@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/itm_holder"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="100dp"
+    android:layout_marginEnd="10dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:background="@color/black_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+            android:id="@+id/media_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:textSize="16sp"/>
+</LinearLayout>

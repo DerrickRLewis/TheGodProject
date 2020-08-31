@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="navigate_wizard"/>
+    <item name="cb_item_tag" type="id"/>
+    <item type="id" name="add_playlist"/>
+    <item type="id" name="download"/>
+    <item type="id" name="pin"/>
+    <item type="id" name="equalizer"/>
+    <item type="id" name="open_equalizer"/>
+    <item type="id" name="share"/>
+    <item type="id" name="remove_loader"/>
+    <item name="song_selected" type="id"/>
+    <item name="player_state_changed" type="id"/>
+    <item name="stop_player" type="id"/>
+    <item type="id" name="reload_downloads"/>
+    <item type="id" name="request_storage_permission_granted"/>
+    <item type="id" name="download_media"/>
+    <item type="id" name="download_completed"/>
+    <item type="id" name="download_progess"/>
+    <item type="id" name="bible_download_progress"/>
+    <item type="id" name="bible_download_complete"/>
+    <item type="id" name="on_purchase_listener"/>
+    <item name="fetch_user_coins" type="id" />
+    <item name="hide_fab" type="id" />
+    <item name="show_fab" type="id" />
+    <item type="id" name="home_screen_notification"/>
+    <item name="reload_bible_view" type="id" />
+    <item name="reload_hymns" type="id" />
+    <item name="upload_request_success" type="id" />
+    <item name="upload_request_error" type="id" />
+    <item name="reload_posts_view" type="id" />
+    <item name="log_recyclerview_pos" type="id" />
+    <item name="current_video_player_position" type="id" />
+
+
+    <item name="jz_fullscreen_id" type="id" />
+    <item name="jz_tiny_id" type="id" />
+    <item name="video_player_progress" type="id" />
+    <item name="audio_player_progress" type="id" />
+    <item name="mainActivity_subscription_alert" type="id" />
+    <item name="audioActivity_subscription_alert" type="id" />
+
+    <item name="reload_notifications" type="id" />
+    <item name="update_user_likes_count" type="id" />
+    <item name="screen_wait" type="id" />
+    <item name="screen_main" type="id" />
+    <item name="free_or_premium" type="id" />
+    <item name="gas_gauge" type="id" />
+    <item name="button_purchase" type="id" />
+    <item name="inapp_billing_ready" type="id" />
+    <item name="inapp_billing_completed" type="id" />
+    <item name="request_login" type="id" />
+    <item name="recreate_mainactivity" type="id" />
+    <item name="update_media_comment_count" type="id" />
+    <item name="update_comment_replies_count" type="id" />
+    <item name="updateMediaTotalLikesAndCommentsViews" type="id" />
+    <item name="reverse_media_reaction" type="id" />
+    <item name="sub_categories" type="id" />
+    <item name="fetch_sub_categories_media" type="id" />
+
+    <item name="scroll_posts_to_top" type="id" />
+    <item name="play_video_tapped" type="id" />
+    <item name="update_userdata" type="id" />
+    <item name="update_userfollow_data" type="id" />
+    <item name="search_people" type="id" />
+    <item name="search_people_cancel" type="id" />
+    <item name="update_post_comment_count" type="id" />
+    <item name="update_edited_post" type="id" />
+    <item name="update_deleted_post" type="id" />
+    <item name="edit_post" type="id" />
+    <item name="delete_post" type="id" />
+
+    <item name="srn_root_layout" type="id" />
+</resources>

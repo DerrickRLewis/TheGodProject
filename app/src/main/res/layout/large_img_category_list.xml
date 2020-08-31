@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:contentPadding="1dp"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/itm_holder"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:background="@color/black_transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                android:id="@+id/media_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+            android:id="@+id/title"
+            android:singleLine="true"
+            android:padding="5dp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="2"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

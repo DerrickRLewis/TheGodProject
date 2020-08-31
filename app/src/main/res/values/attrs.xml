@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="CustomTheme">
+        <attr name="backdropDrawable" format="reference"/>
+        <attr name="dividerColor" format="color|reference"/>
+        <attr name="themeName" format="string"/>
+        <attr name="themeDescription" format="string"/>
+        <attr name="tabLayoutStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ForegroundView">
+        <attr name="foreground" format="color" />
+        <attr name="foregroundGravity" format="integer" />
+        <attr name="foregroundInsidePadding" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ColorPreference">
+        <attr name="dialogTitle" format="string|reference" />
+        <attr name="colors" format="reference" />
+        <attr name="columns" format="integer" />
+        <attr name="material" format="boolean" />
+        <attr name="backwardsOrder" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TouchImageView">
+        <attr name="zoom_enabled" format="boolean" />
+    </declare-styleable>
+
+    <!--Image Resource-->
+    <attr name="src" format="reference" />
+
+    <!--Scale Type of Image-->
+    <attr name="scaleType">
+        <enum name="centerCrop" value="0" />
+        <enum name="fitXY" value="1" />
+    </attr>
+
+    <!--Tint Color-->
+    <attr name="tintColor" format="color" />
+
+    <!--No. of waves to be drawn-->
+    <attr name="tideCount" format="integer" />
+
+    <!--Pick automatic tint color-->
+    <attr name="autoTint" format="boolean" />
+
+    <!--Maximum height for waves-->
+    <attr name="tideHeight" format="dimension" />
+
+    <!--Transparency between 0 - 255 -->
+    <attr name="alphaValue" format="integer" />
+
+    <!-- Gradient Type-->
+    <attr name="gradientType">
+        <enum name="linear" value="0" />
+        <enum name="radial" value="1" />
+    </attr>
+
+    <!--Gradient Start Color-->
+    <attr name="gradient_startColor" format="color" />
+
+    <!--Gradient End Color-->
+    <attr name="gradient_endColor" format="color" />
+
+    <!--Gradient Angle-->
+    <attr name="gradientAngle" format="integer" />
+
+    <declare-styleable name="FrissonView">
+        <attr name="scaleType" />
+        <attr name="src" />
+        <attr name="tintColor" />
+        <attr name="tideCount" />
+        <attr name="autoTint" />
+        <attr name="tideHeight" />
+        <attr name="alphaValue" />
+        <attr name="gradientType" />
+        <attr name="gradientAngle"/>
+        <attr name="gradient_startColor" />
+        <attr name="gradient_endColor" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialSpinner" tools:ignore="ResourceName">
+        <attr format="color" name="ms_arrow_tint"/>
+        <attr format="boolean" name="ms_hide_arrow"/>
+        <attr format="color" name="ms_background_color"/>
+        <attr format="color" name="ms_text_color"/>
+        <attr format="dimension" name="ms_dropdown_max_height"/>
+        <attr format="dimension" name="ms_dropdown_height">
+            <enum name="fill_parent" value="-1"/>
+            <enum name="match_parent" value="-1"/>
+            <enum name="wrap_content" value="-2"/>
+        </attr>
+        <attr format="integer" name="ms_background_selector"/>
+        <attr format="string" name="ms_hint"/>
+        <attr format="color" name="ms_hint_color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="civ_fill_color" format="color" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+    <attr name="CustomChipChoiceStyle" format="reference" />
+    <declare-styleable name="DiagonalLayout">
+        <attr name="diagonal_angle" format="float" />
+        <attr name="diagonal_position" format="enum">
+            <enum name="bottom" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="4"/>
+        </attr>
+        <attr name="diagonal_direction" format="enum">
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MaterialBanner">
+        <attr name="indicatorMargin" format="dimension"/>
+        <attr name="indicatorInside" format="boolean"/>
+        <attr name="match" format="boolean"/>
+        <attr name="indicatorGravity">
+            <flag name="left" value="0"/>
+            <flag name="center" value="1"/>
+            <flag name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="InkPageIndicator">
+        <attr name="ipi_dotDiameter" format="dimension" />
+        <attr name="ipi_dotGap" format="dimension" />
+        <attr name="ipi_animationDuration" format="integer" />
+        <attr name="ipi_pageIndicatorColor" format="color" />
+        <attr name="ipi_currentPageIndicatorColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="refresh_PullRefreshLayout">
+        <attr name="refreshType" format="enum">
+            <enum name="material" value="0" />
+            <enum name="circles" value="1" />
+            <enum name="water_drop" value="2" />
+            <enum name="ring" value="3" />
+            <enum name="smartisan" value="4" />
+        </attr>
+        <attr name="refreshColors" format="reference"/>
+        <attr name="refreshColor" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="RotateLoading">
+        <attr name="loading_width" format="dimension"/>
+        <attr name="loading_color" format="color"/>
+        <attr name="shadow_position" format="integer"/>
+        <attr name="loading_speed" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="EqualizerView">
+        <attr name="barColor" format="color" />
+        <attr name="barCount" format="integer" />
+        <attr name="barWidth" format="dimension" />
+
+        <attr name="marginLeft" format="dimension" />
+        <attr name="marginRight" format="dimension" />
+
+        <attr name="animationDuration" format="integer" />
+        <attr name="animationValueCount" format="integer" />
+
+        <attr name="runInBatterySaveMode" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SmallBangView">
+        <attr name="dots_primary_color" format="color|reference" />
+        <attr name="dots_secondary_color" format="color|reference" />
+        <attr name="circle_start_color" format="color|reference" />
+        <attr name="circle_end_color" format="color|reference" />
+        <attr name="liked" format="boolean"/>
+        <attr name="anim_scale_factor" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="DuoDrawerLayout">
+        <attr name="menu" format="reference"/>
+        <attr name="content" format="reference"/>
+        <attr name="contentScaleClosed" format="float"/>
+        <attr name="clickToCloseScale" format="float"/>
+        <attr name="contentScaleOpen" format="float"/>
+        <attr name="menuScaleClosed" format="float"/>
+        <attr name="menuScaleOpen" format="float"/>
+        <attr name="menuAlphaClosed" format="float"/>
+        <attr name="menuAlphaOpen" format="float"/>
+        <attr name="marginFactor" format="float"/>
+    </declare-styleable>
+    <declare-styleable name="DuoMenuView">
+        <attr name="header" format="reference"/>
+        <attr name="footer" format="reference"/>
+        <attr name="background" format="reference"/>
+    </declare-styleable>
+
+
+
+</resources>

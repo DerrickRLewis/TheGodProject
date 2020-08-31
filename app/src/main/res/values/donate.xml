@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- supported donation platforms -->
+    <!-- remove anyone, you dont wish to support -->
+    <array name="donateOptions">
+        <item>PayStack</item>
+        <item>FlutterWave</item>
+        <item>Google Pay</item>
+    </array>
+    
+    <!--FlutterWaves Api Keys -->
+    <string name="flutterwave_public_key">FLWPUBK_TEST-54196d8840fffa3ea5e8df9f5157311a-X</string>
+    <string name="flutterwave_encryption_key">FLWSECK_TESTeb593ffb55ae</string>
+
+    <!-- Paystack Api Keys -->
+    <string name="Paystack_Public_key">pk_test_66a6c90eeb5796dd58c2ace93b211a54e8dfe45e</string>
+
+    <!-- Stripe API Key -->
+    <string name="Stripe_publishable_key">pk_test_45CaMfdHJ5dxidKFjQnbHO2H00mMuTekQz</string>
+
+</resources>

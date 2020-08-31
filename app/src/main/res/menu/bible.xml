@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/theme"
+            android:orderInCategory="200"
+            android:title="@string/night_mode"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/bookmark"
+            android:orderInCategory="200"
+            android:title="@string/highlighted_verses"
+            android:icon="@drawable/bookmarks"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/read"
+            android:orderInCategory="300"
+            android:title="@string/read_chapter"
+            android:icon="@drawable/speaker"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/search"
+            android:orderInCategory="100"
+            android:title="@string/downloads"
+            android:icon="@drawable/magnify"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
+            app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="0dp"
+    app:cardUseCompatPadding="false"
+    app:contentPadding="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:cardPreventCornerOverlap="false">
+
+    <ScrollView
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                    android:id="@+id/payment_details"
+                    android:text="Amount"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                    android:id="@+id/amount_details"
+                    android:text="Amount"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/amount_holder"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout1"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:fontFamily="sans-serif-light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Amount"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/amount_hint"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/amount"
+                        app:backgroundTint="@null"
+                        android:textSize="18sp"
+                        android:maxLines="1"
+                        android:background="@null"
+                        android:theme="@style/EditTextStyle"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+
+
+                <View
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                    android:id="@+id/error_hint"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="1"
+                    android:textColor="@color/material_red_500"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                    android:text="Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/email"
+                    app:backgroundTint="@null"
+                    android:textSize="15sp"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:hint="Enter Email Address"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:background="@drawable/rectangular_border_background"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                        android:text="Card Number"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/visa"
+                            android:tint="@color/material_blue_500"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/mastercard"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/card_no"
+                    app:backgroundTint="@null"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:padding="15dp"
+                    android:background="@drawable/rectangular_border_background"
+                    android:inputType="number"
+                    android:hint="Card Number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                    android:text="Card Holder Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/name"
+                    app:backgroundTint="@null"
+                    android:textSize="15sp"
+                    android:hint="Name"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:background="@drawable/rectangular_border_background"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content">
+
+                    <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                        android:text="Expiration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/expiry"
+                        app:backgroundTint="@null"
+                        android:textSize="15sp"
+                        android:hint="MM/YY"
+                        android:padding="15dp"
+                        android:maxLines="1"
+                        android:background="@drawable/rectangular_border_background"
+                        android:maxLength="5"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:layout_height="50dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                        android:text="Security Code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/code"
+                        app:backgroundTint="@null"
+                        android:textSize="15sp"
+                        android:hint="cvc"
+                        android:padding="15dp"
+                        android:maxLines="1"
+                        android:maxLength="3"
+                        android:background="@drawable/rectangular_border_background"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textColorHighlight="@color/black"
+                        android:layout_height="50dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pay_button"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_button"
+                android:text="Pay Now"
+                android:onClick="pay_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

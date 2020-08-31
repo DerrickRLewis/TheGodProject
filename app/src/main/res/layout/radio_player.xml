@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/parent_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/screen1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/background_color"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="50dp"
+            android:text="Song Title"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="3"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/navigate_back"
+            android:layout_alignParentEnd="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/arrows_down_double"
+            android:tint="@color/white"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <com.andremion.music.MusicCoverView
+        android:id="@+id/cover"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/radio"
+        android:transitionName="cover photo"
+        app:layout_heightPercent="35%"
+        app:shape="circle"/>
+
+    <RelativeLayout
+        android:id="@+id/play_holder"
+        android:layout_marginTop="250dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/play_pause"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:alpha="0.9"
+            android:tint="@color/white"
+            android:elevation="10dp"
+            android:onClick="resumeOrPause"
+            android:src="@drawable/music_play_button" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/jz_loading"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <apps.envision.mychurch.libs.audio_playback.EqualizerView
+            android:id="@+id/equalizer"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:barColor="@color/colorAccent"
+            app:barWidth="2dp"
+            app:barCount="150"
+            app:runInBatterySaveMode="true"
+            tools:layout_width="match_parent"
+            tools:background="@color/colorAccent" />
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:visibility="gone"
+            android:id="@+id/admobAdView"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ADMOB_Radio_Banner_AD">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+
+</RelativeLayout>

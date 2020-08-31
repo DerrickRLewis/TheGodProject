@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+    android:id="@+id/youtube_player_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="250dp"
+    app:showFullScreenButton="true"
+    app:showYouTubeButton="false"
+    app:useWebUi="false"
+    app:barrierMargin="@dimen/dimen_0dp"
+    app:flow_verticalGap="@dimen/dimen_0dp"
+    app:layout_anchorGravity="center"
+    app:layout_scrollFlags="noScroll"
+    app:flow_wrapMode="none"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

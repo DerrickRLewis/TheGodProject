@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parent_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/screen1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:transitionName="_thumbnail"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/background_color"
+        android:background="@color/black_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="50dp"
+            android:text="Song Title"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="3"
+            android:transitionName="_title"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/navigate_back"
+            android:layout_alignParentEnd="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/arrows_down_double"
+            android:tint="@color/white"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/now_playing_controls_header"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/play_previous"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:tint="@color/white"
+                android:alpha="0.9"
+                android:onClick="skipPrev"
+                android:transitionName="_previous"
+                android:src="@drawable/music_beginning_button" />
+
+            <RelativeLayout
+                android:id="@+id/play_holder"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="30dp"
+                android:layout_gravity="center" >
+
+                <ImageView
+                    android:id="@+id/play_pause"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:maxHeight="60dp"
+                    android:maxWidth="60dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:alpha="0.9"
+                    android:tint="@color/white"
+                    android:onClick="resumeOrPause"
+                    android:transitionName="_play"
+                    android:src="@drawable/music_play_button" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_centerInParent="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminateDrawable="@drawable/jz_loading"
+                    android:transitionName="_progress"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/play_next"
+                android:layout_width="40dp"
+                android:tint="@color/white"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:alpha="0.9"
+                android:onClick="skipNext"
+                android:transitionName="_next"
+                android:src="@drawable/music_end_button" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="0dp"
+            android:id="@+id/seek_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                android:id="@+id/startText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="0.00"
+                android:textSize="14sp"
+                android:textColor="@android:color/white" />
+
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/startText"
+                android:layout_toStartOf="@+id/endText"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+
+            <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                android:id="@+id/endText"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:layout_alignWithParentIfMissing="true"
+                android:maxLines="1"
+                android:text="0.00"
+                android:textSize="14sp"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/likes_layout"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <apps.envision.mychurch.libs.likes.SmallBangView
+                    android:id="@+id/like_holder"
+                    android:onClick="likeMedia"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/likeButton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"
+                    android:tint="@color/white"
+                    android:src="@drawable/like_icon_outline" />
+
+                </apps.envision.mychurch.libs.likes.SmallBangView>
+
+                <TextView
+                    android:id="@+id/likes_count"
+                    android:onClick="likeMedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:textSize="13sp"
+                    android:text="6"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/comments_layout"
+                android:onClick="startCommentsActivity"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/commentButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:onClick="startCommentsActivity"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerInside"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_comment_white_24dp" />
+
+                <TextView
+                    android:id="@+id/comments_count"
+                    android:onClick="startCommentsActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="13sp"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/shuffle_list"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:tint="@color/white"
+                android:layout_gravity="center"
+                android:onClick="shuffleSongs"
+                android:src="@drawable/music_shuffle_button" />
+
+            <ImageView
+                android:id="@+id/load_playlist"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:tint="@color/white"
+                android:layout_gravity="center"
+                android:onClick="loadPlaylist"
+                android:src="@drawable/music_playlist" />
+
+
+            <RelativeLayout
+                android:id="@+id/repeat_holder"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/repeatButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="?android:selectableItemBackground"
+                    android:scaleType="centerInside"
+                    android:tint="@color/white"
+                    android:src="@drawable/music_repeat_button" />
+
+                <TextView
+                    android:id="@+id/repeat_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/options"
+                android:onClick="mediaOptions"
+                android:layout_width="25dp"
+                android:tint="@color/white"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:alpha="0.9"
+                android:src="@drawable/ic_more_vert_white_24dp" />
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:visibility="gone"
+            android:id="@+id/admobAdView"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ADMOB_Player_Banner_AD">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+    <apps.envision.mychurch.libs.visualizer.VisualizerView
+        android:id="@+id/visual_view"
+        android:layout_below="@+id/header_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/now_playing_controls_header"/>
+
+
+</RelativeLayout>

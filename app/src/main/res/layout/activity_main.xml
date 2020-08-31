@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<apps.envision.mychurch.libs.duonavigationdrawer.views.DuoDrawerLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/drawer"
+    android:background="@drawable/gradient_red_background"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <apps.envision.mychurch.libs.duonavigationdrawer.views.DuoMenuView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_red_background"
+        android:tag="@string/tag_menu"
+        app:footer="@layout/duo_view_footer"
+        app:header="@layout/duo_view_header"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:tag="@string/tag_content"
+        tools:context=".ui.activities.MainActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_marginTop="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+        <!-- Adding bottom sheet after main content -->
+        <include layout="@layout/bottom_media_controller" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</apps.envision.mychurch.libs.duonavigationdrawer.views.DuoDrawerLayout>

@@ -1,0 +1,90 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    android:background="@drawable/circularbordersolid"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/profile"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <apps.envision.mychurch.utils.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_marginEnd="15dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar"/>
+
+
+        <LinearLayout
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <apps.envision.mychurch.ui.fonts.OpensSansBoldTextView
+                android:id="@+id/name"
+                android:text="@string/app_name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <apps.envision.mychurch.ui.fonts.OpenSansRegularTextView
+                android:id="@+id/location"
+                android:text="@string/view_profile"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <apps.envision.mychurch.ui.fonts.OpenSansRegularTextView
+                android:id="@+id/follow_unfollow"
+                android:textSize="15sp"
+                android:background="@drawable/oval_circle_background"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:text="@string/follow"
+                android:textColor="@color/black"
+                android:layout_width="100dp"
+                android:layout_height="28dp"/>
+
+            <apps.envision.mychurch.libs.RotateLoading
+                android:visibility="gone"
+                android:id="@+id/rotateLoading"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                app:loading_speed="11"
+                app:loading_width="2dp"
+                app:loading_color="@color/colorAccent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

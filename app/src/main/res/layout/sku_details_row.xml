@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2017 Google Inc. All rights reserved.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    style="@style/CardViewStyle"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/sku_icon"
+            android:layout_alignParentTop="true"
+            android:gravity="start"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+            android:id="@+id/price"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/primary_dark"
+            android:text="20"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/details"
+            android:layout_below="@+id/sku_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                android:id="@+id/description"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_below="@+id/details"
+            android:id="@+id/state_button"
+            android:background="@color/primary_dark"
+            android:textColor="@color/white"
+            android:layout_gravity="end"
+            android:layout_alignParentEnd="true"
+            android:text="@string/button_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/button_buy"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

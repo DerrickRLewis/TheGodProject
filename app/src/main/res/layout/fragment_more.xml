@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/white"
+    android:orientation="vertical">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:text="@string/account"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/material_grey_200"/>
+
+
+    <LinearLayout
+        android:id="@+id/create_account"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:textColor="@color/material_grey_700"
+            android:textSize="17sp"
+            android:text="@string/create_an_account" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:textColor="@color/material_grey_700"
+            android:textSize="14sp"
+            android:text="@string/create_account_hint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logout"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:textColor="@color/material_grey_700"
+            android:textSize="17sp"
+            android:text="@string/logout_app" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:textColor="@color/material_grey_700"
+            android:textSize="14sp"
+            android:text="@string/logout_app_hint" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/material_grey_200"/>
+
+    <LinearLayout
+        android:id="@+id/subscribe"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:textColor="@color/material_grey_700"
+            android:textSize="17sp"
+            android:text="@string/start_subscription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:textColor="@color/material_grey_700"
+            android:textSize="14sp"
+            android:text="@string/start_sub_hint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/app_sub"
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:textColor="@color/material_grey_700"
+            android:textSize="17sp"
+            android:text="@string/app_subscription" />
+
+        <TextView
+            android:id="@+id/sub_expiry_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:textColor="@color/material_grey_700"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/material_grey_200"/>
+
+    <include layout="@layout/more_layout"/>
+
+
+</LinearLayout>
+</ScrollView>

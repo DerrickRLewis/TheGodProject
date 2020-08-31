@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_background_media"
+        android:padding="10dp"
+        android:gravity="start|center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bookmark_black_24dp"
+            android:tint="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/item_number"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/material_blue_grey_700"
+            android:textSize="14sp"
+            android:text="Saved Files"/>
+
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/seperator"
+        android:layout_below="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/material_blue_grey_100" />
+
+    <!-- A RecyclerView to display list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_below="@+id/seperator"
+        android:background="@color/white"
+        android:layout_marginTop="6dp"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"/>
+
+
+    <TextView
+        android:id="@+id/message"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/material_blue_grey_700"
+        android:textSize="14sp"
+        android:text="@string/no_bookmarked_media"/>
+
+
+</RelativeLayout>
+

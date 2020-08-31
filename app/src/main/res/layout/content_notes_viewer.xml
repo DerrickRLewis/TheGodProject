@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.activities.InboxViewerActivity"
+    tools:showIn="@layout/activity_inbox_viewer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:minHeight="500dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                android:id="@+id/title"
+                android:maxLines="5"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="Date"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp" />
+
+                <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="time"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <es.dmoral.markdownview.MarkdownView
+                android:id="@+id/markdown_view"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:padding="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

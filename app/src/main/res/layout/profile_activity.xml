@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:frisson="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    android:background="#fff">
+
+    <apps.envision.mychurch.libs.frisson.FrissonView
+        android:id="@+id/wave_head"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        frisson:tideCount="3"
+        frisson:src="@drawable/screen1"
+        frisson:tideHeight="50dp"
+        frisson:alphaValue="0"
+        frisson:autoTint="true"/>
+
+
+    <apps.envision.mychurch.utils.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <apps.envision.mychurch.ui.fonts.OpensSansBoldTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/app_name"
+            android:maxLines="2"
+            android:textSize="17sp" />
+
+        <apps.envision.mychurch.ui.fonts.OpenSansRegularTextView
+            android:id="@+id/follow_unfollow"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/oval_circle_background"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/follow"
+            android:textColor="@color/black"
+            android:layout_width="100dp"
+            android:layout_height="28dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

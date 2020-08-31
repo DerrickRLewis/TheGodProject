@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ebolo.kricheditor.MainActivity">
+    <item
+        android:id="@+id/undo"
+        android:title="redo Html"
+        android:icon="@drawable/ic_undo_white_24dp"
+        android:iconTint="@color/white"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/redo"
+        android:title="undo Html"
+        android:icon="@drawable/ic_redo_white_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/save"
+        android:title="save Html"
+        android:icon="@drawable/ic_done_all_white_24dp"
+        app:showAsAction="always" />
+</menu>

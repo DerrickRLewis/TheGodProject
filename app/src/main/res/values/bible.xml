@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bible_books">
+        <item>Genesis</item>
+        <item handle="exodus">Exodus</item>
+        <item handle="leviticus">Leviticus</item>
+        <item handle="numbers">Numbers</item>
+        <item handle="deuteronomy">Deuteronomy</item>
+        <item handle="joshua">Joshua</item>
+        <item handle="judges">Judges</item>
+        <item handle="ruth">Ruth</item>
+        <item handle="1-samuel">1 Samuel</item>
+        <item handle="2-samuel">2 Samuel</item>
+        <item handle="1-kings">1 Kings</item>
+        <item handle="2-kings">2 Kings</item>
+        <item handle="1-chronicles">1 Chronicles</item>
+        <item handle="2-chronicles">2 Chronicles</item>
+        <item handle="ezra">Ezra</item>
+        <item handle="nehemiah">Nehemiah</item>
+        <item handle="esther">Esther</item>
+        <item handle="job">Job</item>
+        <item handle="psalms">Psalms</item>
+        <item handle="proverbs">Proverbs</item>
+        <item handle="ecclesiastes">Ecclesiastes</item>
+        <item handle="song-of-solomon">Song of Solomon</item>
+        <item handle="isaiah">Isaiah</item>
+        <item handle="jeremiah">Jeremiah</item>
+        <item handle="lamentations">Lamentations</item>
+        <item handle="ezekiel">Ezekiel</item>
+        <item handle="daniel">Daniel</item>
+        <item handle="hosea">Hosea</item>
+        <item handle="joel">Joel</item>
+        <item handle="amos">Amos</item>
+        <item handle="obadiah">Obadiah</item>
+        <item handle="jonah">Jonah</item>
+        <item handle="micah">Micah</item>
+        <item handle="nahum">Nahum</item>
+        <item handle="habakkuk">Habakkuk</item>
+        <item handle="zephaniah">Zephaniah</item>
+        <item handle="haggai">Haggai</item>
+        <item handle="zechariah">Zechariah</item>
+        <item handle="malachi">Malachi</item>
+        <item handle="matthew">Matthew</item>
+        <item handle="mark">Mark</item>
+        <item handle="luke">Luke</item>
+        <item handle="john">John</item>
+        <item handle="acts">Acts</item>
+        <item handle="romans">Romans</item>
+        <item handle="1-corinthians">1 Corinthians</item>
+        <item handle="2-corinthians">2 Corinthians</item>
+        <item handle="galatians">Galatians</item>
+         <item handle="ephesians">Ephesians</item>
+         <item handle="philippians">Philippians</item>
+        <item handle="colossians">Colossians</item>
+        <item handle="1-thessalonians">1 Thessalonians</item>
+        <item handle="2-thessalonians">2 Thessalonians</item>
+        <item handle="1-timothy">1 Timothy</item>
+        <item handle="2-timothy">2 Timothy</item>
+        <item handle="titus">Titus</item>
+        <item handle="philemon">Philemon</item>
+        <item handle="hebrews">Hebrews</item>
+        <item handle="james">James</item>
+        <item handle="1-peter">1 Peter</item>
+        <item handle="2-peter">2 Peter</item>
+        <item handle="1-john">1 John</item>
+        <item handle="2-john">2 John</item>
+        <item handle="3-john">3 John</item>
+        <item handle="jude">Jude</item>
+        <item handle="revelation">Revelation</item>
+    </string-array>
+
+
+    <string-array name="old_testament">
+        <item>Genesis</item>
+        <item handle="exodus">Exodus</item>
+        <item handle="leviticus">Leviticus</item>
+        <item handle="numbers">Numbers</item>
+        <item handle="deuteronomy">Deuteronomy</item>
+        <item handle="joshua">Joshua</item>
+        <item handle="judges">Judges</item>
+        <item handle="ruth">Ruth</item>
+        <item handle="1-samuel">1 Samuel</item>
+        <item handle="2-samuel">2 Samuel</item>
+        <item handle="1-kings">1 Kings</item>
+        <item handle="2-kings">2 Kings</item>
+        <item handle="1-chronicles">1 Chronicles</item>
+        <item handle="2-chronicles">2 Chronicles</item>
+        <item handle="ezra">Ezra</item>
+        <item handle="nehemiah">Nehemiah</item>
+        <item handle="esther">Esther</item>
+        <item handle="job">Job</item>
+        <item handle="psalms">Psalms</item>
+        <item handle="proverbs">Proverbs</item>
+        <item handle="ecclesiastes">Ecclesiastes</item>
+        <item handle="song-of-solomon">Song of Solomon</item>
+        <item handle="isaiah">Isaiah</item>
+        <item handle="jeremiah">Jeremiah</item>
+        <item handle="lamentations">Lamentations</item>
+        <item handle="ezekiel">Ezekiel</item>
+        <item handle="daniel">Daniel</item>
+        <item handle="hosea">Hosea</item>
+        <item handle="joel">Joel</item>
+        <item handle="amos">Amos</item>
+        <item handle="obadiah">Obadiah</item>
+        <item handle="jonah">Jonah</item>
+        <item handle="micah">Micah</item>
+        <item handle="nahum">Nahum</item>
+        <item handle="habakkuk">Habakkuk</item>
+        <item handle="zephaniah">Zephaniah</item>
+        <item handle="haggai">Haggai</item>
+        <item handle="zechariah">Zechariah</item>
+        <item handle="malachi">Malachi</item>
+    </string-array>
+
+    <string-array name="new_testament">
+        <item handle="matthew">Matthew</item>
+        <item handle="mark">Mark</item>
+        <item handle="luke">Luke</item>
+        <item handle="john">John</item>
+        <item handle="acts">Acts</item>
+        <item handle="romans">Romans</item>
+        <item handle="1-corinthians">1 Corinthians</item>
+        <item handle="2-corinthians">2 Corinthians</item>
+        <item handle="galatians">Galatians</item>
+        <item handle="ephesians">Ephesians</item>
+        <item handle="philippians">Philippians</item>
+        <item handle="colossians">Colossians</item>
+        <item handle="1-thessalonians">1 Thessalonians</item>
+        <item handle="2-thessalonians">2 Thessalonians</item>
+        <item handle="1-timothy">1 Timothy</item>
+        <item handle="2-timothy">2 Timothy</item>
+        <item handle="titus">Titus</item>
+        <item handle="philemon">Philemon</item>
+        <item handle="hebrews">Hebrews</item>
+        <item handle="james">James</item>
+        <item handle="1-peter">1 Peter</item>
+        <item handle="2-peter">2 Peter</item>
+        <item handle="1-john">1 John</item>
+        <item handle="2-john">2 John</item>
+        <item handle="3-john">3 John</item>
+        <item handle="jude">Jude</item>
+        <item handle="revelation">Revelation</item>
+    </string-array>
+
+
+
+    <string-array name="bible_books_chapters">
+        <item>50</item>
+        <item>40</item>
+        <item>27</item>
+        <item>36</item>
+        <item>34</item>
+        <item>24</item>
+        <item>21</item>
+        <item>4</item>
+        <item>31</item>
+        <item>24</item>
+        <item>22</item>
+        <item>25</item>
+        <item>29</item>
+        <item>36</item>
+        <item>10</item>
+        <item>13</item>
+        <item>10</item>
+        <item>42</item>
+        <item>150</item>
+        <item>31</item>
+        <item>12</item>
+        <item>8</item>
+        <item>66</item>
+        <item>52</item>
+        <item>5</item>
+        <item>48</item>
+        <item>12</item>
+        <item>14</item>
+        <item>3</item>
+        <item>9</item>
+        <item>1</item>
+        <item>4</item>
+        <item>7</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2</item>
+        <item>14</item>
+        <item>4</item>
+        <item>28</item>
+        <item>16</item>
+        <item>24</item>
+        <item>21</item>
+        <item>28</item>
+        <item>16</item>
+        <item>16</item>
+        <item>13</item>
+        <item>6</item>
+        <item>6</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>3</item>
+        <item>6</item>
+        <item>4</item>
+        <item>3</item>
+        <item>1</item>
+        <item>13</item>
+        <item>5</item>
+        <item>5</item>
+        <item>3</item>
+        <item>5</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>22</item>
+    </string-array>
+
+
+    <string-array name="bible_font_size">
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+
+    <string name="kjv">KJV.json</string>
+    <string name="msg">MSG.json</string>
+    <string name="niv">NIV.json</string>
+    <string name="nkjv">NKJV.json</string>
+    <string name="amp">AMP.json</string>
+    <string name="nlt">NLT.json</string>
+    <string name="nrsv">NRSV.json</string>
+
+</resources>

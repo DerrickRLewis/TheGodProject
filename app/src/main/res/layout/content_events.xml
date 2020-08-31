@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.DevotionalsActivity">
+
+    <apps.envision.mychurch.libs.horizontalpicker.HorizontalPicker
+        android:id="@+id/datePicker"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_below="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <FrameLayout
+            android:minHeight="500dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <apps.envision.mychurch.libs.RotateLoading
+                android:id="@+id/rotateloading"
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:loading_speed="11"
+                app:loading_width="2dp"
+                app:loading_color="@color/colorAccent"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/info_layout"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/reload"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/ic_refresh_black_24dp"
+                    android:tint="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/cannot_load_events"
+                    android:textColor="@color/material_blue_grey_700"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:id="@+id/events"
+                android:background="@android:color/white"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </FrameLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

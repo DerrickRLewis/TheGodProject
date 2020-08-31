@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:padding="0dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="@dimen/dimen_0dp"
+    app:cardUseCompatPadding="false"
+    app:contentPadding="@dimen/dimen_0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:cardPreventCornerOverlap="false">
+
+<RelativeLayout
+    android:id="@+id/itm_holder"
+    android:background="@drawable/gradient_red_background"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    android:gravity="center_vertical" >
+
+    <ProgressBar
+        android:id="@+id/bottom_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentTop="true"
+        android:paddingTop="0dp"
+        android:layout_marginTop="-4dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/media_bottom_progress" />
+
+    <ImageView
+        android:id="@+id/albumArt"
+        android:layout_alignParentStart="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:transitionName="_thumbnail"
+        android:src="@drawable/image"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginStart="65dp"
+        android:orientation="vertical" >
+
+        <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+            android:id="@+id/title"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breathe on me - Hillsong"
+            android:textColor="@color/white"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:transitionName="_title"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/play_previous"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:tint="@color/white"
+            android:onClick="skipPrev"
+            android:transitionName="_previous"
+            android:src="@drawable/music_beginning_button" />
+
+        <RelativeLayout
+            android:id="@+id/play_holder"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/play_pause"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:tint="@color/white"
+                android:onClick="resumeOrPause"
+                android:transitionName="_play"
+                android:src="@drawable/music_play_button" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminateDrawable="@drawable/jz_loading"
+                android:transitionName="_progress"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/play_next"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:tint="@color/white"
+            android:onClick="skipNext"
+            android:transitionName="_next"
+            android:src="@drawable/music_end_button" />
+
+    </LinearLayout>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

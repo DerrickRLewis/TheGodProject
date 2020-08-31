@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@color/material_grey_200"
+    android:scrollbarSize="1dp"
+    android:scrollbars="vertical"
+    android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="8dp"
+            android:id="@+id/facebook_page"
+            app:cardElevation="@dimen/_8dp"
+            app:cardCornerRadius="0dp"
+            android:layout_weight="1"
+            card_view:cardCornerRadius="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/facebook_page"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <View
+                    android:background="@color/backgroundTransparent4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+                <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/white"
+                    android:text="@string/facebook_page"
+                    android:textSize="22sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_weight="2"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:paddingEnd="8dp"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/instagram_page"
+                    app:cardElevation="@dimen/_8dp"
+                    app:cardCornerRadius="0dp"
+                    card_view:cardCornerRadius="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/instagram"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                        <View
+                            android:background="@color/backgroundTransparent4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+
+                        <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@color/white"
+                            android:text="@string/instagram_page"
+                            android:textSize="22sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/youtube_page"
+                    app:cardElevation="@dimen/_8dp"
+                    app:cardCornerRadius="0dp"
+                    android:layout_marginTop="10dp"
+                    card_view:cardCornerRadius="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/youtube_page"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                        <View
+                            android:background="@color/backgroundTransparent4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+
+                        <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@color/white"
+                            android:text="@string/youtube_page"
+                            android:textSize="22sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_height="match_parent">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/twitter_page"
+                    app:cardElevation="@dimen/_8dp"
+                    app:cardCornerRadius="0dp"
+                    card_view:cardCornerRadius="0dp"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/twitter"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                        <View
+                            android:background="@color/backgroundTransparent1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+
+                        <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:textColor="@color/white"
+                            android:text="@string/twitter_page"
+                            android:textSize="22sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

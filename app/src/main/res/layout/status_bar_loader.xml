@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/notificationbg"
+    android:background="@drawable/gradient_red_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/itm_holder"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/status_bar_album_art"
+            android:layout_alignParentStart="true"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/image"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@+id/status_bar_album_art"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="140dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/status_bar_track_name"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Breathe on me - Hillsong"
+                android:textColor="@color/white"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="8dp"
+            android:gravity="end"
+            android:layout_gravity="center|end" >
+
+            <ImageView
+                android:id="@+id/status_bar_prev"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:tint="@color/white"
+                android:src="@drawable/music_beginning_button" />
+
+            <RelativeLayout
+                android:id="@+id/play_holder"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_centerInParent="true"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminateDrawable="@drawable/jz_loading"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/status_bar_next"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:tint="@color/white"
+                android:src="@drawable/music_end_button" />
+
+            <ImageView
+                android:id="@+id/status_bar_collapse"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:tint="@color/material_grey_400"
+                android:src="@drawable/arrows_circle_remove" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

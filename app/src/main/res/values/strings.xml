@@ -1,0 +1,588 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">MyChurch</string>
+    <string name="download_path">.MyChurch</string>
+
+    <string name="onboarding_text_one">Welcome to MyChurch</string>
+    <string name="onboarding_text_two">Packed with Features</string>
+    <string name="onboarding_text_three">Audio, Video \n &amp; Live Streaming</string>
+    <string name="onboarding_text_four">Create Account</string>
+
+    <string name="onboarding_hint_one">Extend beyond the Sunday mornings &amp; the four walls of your church. Everything you need to communicate and engage with a mobile-focused world.</string>
+    <string name="onboarding_hint_two">We have brought together all of the top features that your church app must have. Events, Devotionals, Notifications, Notes and multi-version bible.</string>
+    <string name="onboarding_hint_three">Allow users across the globe watch videos, listen to audio messages and watch live streams of your church services.</string>
+    <string name="onboarding_hint_four">Start your journey to a never-ending worship experience.</string>
+
+    <array name="letter_tile_colors">
+        <item>#f16364</item>
+        <item>#f58559</item>
+        <item>#f9a43e</item>
+        <item>#e4c62e</item>
+        <item>#67bf74</item>
+        <item>#59a2be</item>
+        <item>#2093cd</item>
+        <item>#ad62a7</item>
+    </array>
+
+    <array name="menuOptions">
+        <item>Home</item>
+        <item>Branches</item>
+        <item>Inbox</item>
+        <item>Events</item>
+        <item>My Playlists</item>
+        <item>Bookmarks</item>
+        <item>Social Platforms</item>
+        <item>More</item>
+    </array>
+
+    <array name="menuIcons">
+        <item>@drawable/home</item>
+        <item>@drawable/inbox</item>
+        <item>@drawable/playlists</item>
+        <item>@drawable/bookmarks</item>
+        <item>@drawable/coins</item>
+        <item>@drawable/more</item>
+        <item>@drawable/more</item>
+    </array>
+
+    <string-array name="report_comment_options">
+        <item>Unwanted commercial content or spam</item>
+        <item>Pornography or sexual explicit material</item>
+        <item>Hate speech or graphic violence</item>
+        <item>Harassment or bullying</item>
+    </string-array>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_network">No Data network detected on the device</string>
+
+    <string name="no_comments">No Comments</string>
+    <string name="cant_load_more_comments">Could not load more comments</string>
+    <string name="home">Home</string>
+    <string name="artists_profiles">Artists Profiles</string>
+    <string name="playlists">Playlists</string>
+    <string name="downloads">Downloads</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="settings">Settings</string>
+    <string name="delete_all_pins_warning">Do you want to delete all your bookmarked media?</string>
+    <string name="clear_all_pins">Clear Bookmarked Media</string>
+    <string name="no_eq">No equalizer found!</string>
+
+    <string name="audio_playlists">Audio Playlists</string>
+    <string name="video_playlists">Video Playlists</string>
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="new_audio_playlist">New Audio Playlist</string>
+    <string name="new_video_playlist">New Video Playlist</string>
+
+
+    <string name="begin_search">Tap the bar above to begin a search</string>
+    <string name="load_more">load more</string>
+    <string name="audios">Audios</string>
+    <string name="videos">Videos</string>
+    <string name="audio_tracks">Audio Messages</string>
+    <string name="video_tracks">Video Messages</string>
+    <string name="tracks">Tracks</string>
+    <string name="playlist">Playlist</string>
+    <string name="my_playlist">My Playlist</string>
+    <string name="search_result">Search Result</string>
+    <string name="search_results">Search Results</string>
+    <string name="search_mp3">Search Mp3</string>
+    <string name="search_lyrics">Search Lyrics</string>
+    <string name="search">Search</string>
+    <string name="saved_video">Saved Video</string>
+    <string name="media_bookmarked">Bookmarked</string>
+    <string name="media_unbookmarked">removed from bookmarks</string>
+    <string name="media_already_saved">media already saved</string>
+    <string name="media_deleted">Media deleted</string>
+    <string name="bookmarked_medias">Bookmarked media(s)</string>
+    <string name="profile">Portfolio</string>
+    <string name="play">Play</string>
+    <string name="delete">Delete</string>
+    <string name="delete_media">Delete media</string>
+    <string name="music_shuffled">current music list shuffled</string>
+    <string name="delete_media_hint">This will delete the media from your device. Do you want to continue?</string>
+    <string name="delete_media_failed">Failed to delete Media File!</string>
+    <string name="no_playlist">No playlist found \nTo create a new playlist\nClick on the add button below</string>
+    <string name="no_media">No media found \nClick on the add button below\nto add media to playlist</string>
+    <string name="no_media_on_playlist">No media found</string>
+    <string name="request_permission_hint">Permission needed</string>
+    <string name="request_folder_msg">We require your permission to save or to list all downloaded media files to/from your device.</string>
+    <string name="request_audio_msg">We require your permission to show audio music visualizer.</string>
+
+    <string name="trending">Hot and Trending</string>
+    <string name="most_downloaded">Most downloaded</string>
+    <string name="featured">Featured list</string>
+    <string name="playing_media" translatable="false">&lt;b>%1s&lt;/b>&lt;br/>%2s</string>
+    <string name="bad_id">No Media playing!</string>
+
+
+    <string name="search_hint">Search for video &amp; audio</string>
+    <string name="no_bookmarked_media">No Bookmarked media</string>
+    <string name="wait">Processing Request</string>
+    <string name="my_downloads">My Downloads</string>
+    <string name="my_tracks">All Music Tracks</string>
+    <string name="downloading">Downloading</string>
+    <string name="download_options">DOWNLOAD OPTIONS</string>
+    <string name="download_failed">DOWNLOAD FAILED</string>
+    <string name="download_complete">DOWNLOAD COMPLETE</string>
+    <string name="download_cancelled">download cancelled</string>
+    <string name="no_data">No data found</string>
+    <string name="playback_error">Cant play audio at the moment</string>
+
+    <string name="playlist_title">title of playlist</string>
+    <string name="add_to_playlist">Add to playlist</string>
+    <string name="clear_media">Clear All Media</string>
+    <string name="delete_playlist">Delete Playlist</string>
+
+    <string name="sponsored">Sponsored</string>
+    <string name="cancel">Cancel</string>
+    <string name="continue_">Continue</string>
+    <string name="retry">retry</string>
+    <string name="done">done</string>
+    <string name="cant_process">oops!!! something went wrong.</string>
+    <string name="no_file_manager">Please install a File Manager</string>
+
+    <string name="clear_playlist_info">Clear playlist media</string>
+    <string name="clear_playlist_message">Do you wish to delete all media from this playlist?</string>
+
+    <string name="network_error">No data connection detected \n please rectify and click to retry.</string>
+    <string name="data_error">An error occurred \n while fetching data \n please click to retry.</string>
+    <string name="make_comment_error">Can\'t publish your comment at the moment</string>
+    <string name="edit_comment_error">Can\'t edit your comment at the moment</string>
+    <string name="delete_comment_error">Can\'t delete your comment at the moment</string>
+    <string name="report_comment_error">Can\'t report your comment at the moment</string>
+    <string name="like_media_error">Can\'t process media reactions at the moment</string>
+    <string name="share_text"> Via MyChurch App. Download now at </string>
+    <string name="share_app_text">Join the Video and Audio streaming platform that lets you watch and listen to millions of files from around the world. Download now at </string>
+
+    <string name="permission_granted">Permission Granted!</string>
+    <string name="permission_permanently_denied">Permission Permanently Denied, cannot process.</string>
+    <string name="permission_denied">Permission Denied, cannot process.</string>
+
+
+    <!-- settings strings -->
+    <string name="general">GENERAL</string>
+
+
+    <string name="about">ABOUT</string>
+    <string name="version">Version</string>
+    <string name="show_last_search">Always save my search</string>
+    <string name="remove_ads">Remove ads</string>
+    <string name="remove_ads_hint">Click here to remove all ads for just a token.</string>
+    <string name="rate_app">Rate this app</string>
+    <string name="rate_app_hint">Visit the playstore to leave a review about this app.</string>
+    <string name="terms">Terms and Conditions</string>
+    <string name="terms_hint">Read end user license agreement for using this app</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback_hint">Please send us your feedbacks and recommendations for this app</string>
+    <string name="developer">Developer profile</string>
+    <string name="developer_hint">Visit and view other apps from the developer.</string>
+    <string name="share_app">Share this app</string>
+    <string name="share_app_hint">Let your friends and family know about this app.</string>
+    <string name="player_error">No data connection detected.</string>
+
+    <!-- end settings -->
+
+    <!-- feedback strings -->
+    <string name="app_email">envisionaps@gmail.com</string>
+    <string name="feedback_subject">Feedbacks and recommendations for this app.</string>
+    <string name="developer_feedback">Developer feedback.</string>
+    <!-- end feedback strings -->
+
+    <string name="title_activity_playlist">Playlists</string>
+    <string name="cant_add_to_playlist">cant add to playlist at the moment</string>
+    <string name="media_added_to_playlist">Media added to playlist</string>
+    <string name="download_finished">Download finished</string>
+    <string name="download_in_progress">Download in progress</string>
+    <string name="cancel_current_download">Media is currently downloading, Do you want to cancel current download?</string>
+
+    <string name="login">Login</string>
+
+    <string name="invalid_email_hint">Please enter a valid email address</string>
+    <string name="error">Error</string>
+    <string name="password_error_hint">Password field is empty</string>
+    <string name="success">success</string>
+    <string name="passwords_dont_match">Passwords dont match</string>
+    <string name="password_too_short_hint">Password is too short, must not be less than 6 digits</string>
+    <string name="share">Share</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="remove_bookmark">Remove from Bookmarks</string>
+    <string name="download">Download</string>
+    <string name="playlist_name_short_hint">Playlist name is too short!</string>
+    <string name="playlist_name_empty_hint">Playlist name cannot be empty</string>
+    <string name="playlist_added">Playlist added</string>
+    <string name="new_playlist">New Playlist</string>
+    <string name="download_manager">Download Manager</string>
+    <string name="cancel_downloads">Cancel All Downloads</string>
+    <string name="cancel_downloads_hint">This will clear all your downloads list and will cancel any pending downloads.</string>
+    <string name="cancel_single_download">Cancel Download</string>
+    <string name="no_downloads_info">No Downloads</string>
+    <string name="subscription_required_info">You need to subscribe before you can download this</string>
+    <string name="play_subscription_required_info">You need to subscribe before you can play the full length of this</string>
+    <string name="subscription_required">Subscription Required</string>
+    <string name="to_your_device">to your device.</string>
+    <string name="no_downloaded_audio">No Downloaded Audios</string>
+    <string name="no_downloaded_videos">No Downloaded Videos</string>
+    <string name="remove_from_playlist">remove from playlist</string>
+    <string name="download_error">Download Error</string>
+    <string name="pending">Pending</string>
+    <string name="mb_format">Downloaded %d of %d MB</string>
+    <string name="permission_denied_file_download">Permission Denied, cannot download the requested file</string>
+    <string name="pause">Pause</string>
+    <string name="file_already_downloaded">This media file has already been downloaded</string>
+    <string name="temp_file_storage_dir">.tmp</string>
+
+    <string name="tips_not_wifi_confirm">Resume</string>
+    <string name="tips_not_wifi_cancel">Stop play</string>
+    <string name="no_url">No Url</string>
+    <string name="replay">Replay</string>
+    <string name="click_to_restart">Click to try again</string>
+    <string name="video_loading_failed">Video loading failed</string>
+    <string name="current_playlist">Current Playlist</string>
+    <string name="more">More</string>
+    <string name="account_manager">Account Manager</string>
+    <string name="name_error">Please enter your full name</string>
+    <string name="account">Account</string>
+    <string name="create_an_account">Create an Account or Login</string>
+    <string name="create_account_hint">Its absolutely free and we wont share your account details with anyone.</string>
+    <string name="start_subscription">Unlock Premium Features</string>
+    <string name="start_subscription_hint">Unlock premium features to start your journey to a never-ending media streaming experience.</string>
+    <string name="app_subscription">App Subscription</string>
+    <string name="start_sub_hint">start your journey to a never-ending media streaming experience.</string>
+    <string name="logout_app">Logout from app</string>
+    <string name="logout_app_hint">Disconnect your user account from this app.</string>
+    <string name="expires_on">Expires on </string>
+    <string name="create_account">Create Account</string>
+    <string name="login_to_app">Login to app</string>
+    <string name="what_do_you_wish_to_do">What do you wish to do?</string>
+    <string name="logout">Logout from app? </string>
+    <string name="logout_hint">You may not be able to access any of our premium services you are entitled to, if you are not logged in.</string>
+
+    <string name="alert_already_purchased">Item is already purchased</string>
+
+    <string name="error_no_skus">We didn\'t find any SKUs to display&#8230; Check your internet
+        connection and make sure your Google Developer Console was setup correctly.</string>
+    <string name="error_billing_unavailable">Billing unavailable. Make sure your Google Play app
+        is setup correctly</string>
+    <string name="error_billing_default">Billing unavailable. Please check your device.</string>
+    <string name="button_buy">Subscribe</string>
+    <string name="error_codelab_not_finished">TODO: Here you will need to perform the
+        integration with Play Store to study the New way of integration with Play Billing.
+    </string>
+    <string name="login_required">We require that you create an account or login before you can subscribe on this platform.</string>
+    <string name="account_blocked">Account Blocked</string>
+    <string name="account_blocked_hint">Your account have been blocked and you can no longer access any media on this platform. Send us a mail to resolve this issue if this is an error.</string>
+    <string name="account_unblocked">Account unBlocked</string>
+    <string name="account_unblocked_hint">Your account have been unblocked. You now have unrestricted access to any media on this platform.</string>
+    <string name="account_deleted">Account Deleted</string>
+    <string name="account_deleted_hint">Your account have been deleted and you can no longer access any media on this platform. Send us a mail to resolve this issue if this is an error.</string>
+    <string name="no_data_connection">No data connection detected</string>
+    <string name="sub_success">You have successfully subscribed on %s of media streaming experience. Your subscription will expire on %s.</string>
+
+    <string name="one_week_plan">one week</string>
+    <string name="one_month_plan">one month</string>
+    <string name="three_months_plan">three months</string>
+    <string name="six_months_plan">six months</string>
+    <string name="one_year_plan">one year</string>
+    <string name="congrats">Congratulations</string>
+    <string name="sub_not_successful">Subscription was not successful</string>
+    <string name="sub_verify_error">We cannot verify the current subscription. Please make sure you have a stable data connection. You can try closing and restarting the app to automatically verify
+        your current subscription plan. Please contact us through our email address, if this issue persists. Thank You.</string>
+    <string name="add_a_comment">Add a comment</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="comments">Comments</string>
+    <string name="edit_comment">Edit Comment</string>
+    <string name="delete_comment">Delete Comment</string>
+    <string name="delete_comment_hint">Do you wish to delete this comment? Please note that deleted comments might still show in other users comment feeds.</string>
+    <string name="reply_to_comment">Reply to comment</string>
+    <string name="replies">Replies</string>
+    <string name="edit_reply">Edit Reply</string>
+    <string name="report_comment">Report Comment</string>
+    <string name="report">Report</string>
+    <string name="go_premium">Go Premium</string>
+    <string name="hot_amp_trending"><![CDATA[Hot & Trending]]></string>
+    <string name="hot_amp_trending_audios_and_videos"><![CDATA[Hot & Trending Audios and Videos]]></string>
+    <string name="new_videos_from_all_categories">New Videos from all categories</string>
+    <string name="new_audios_from_all_categories">New Audios from all categories</string>
+    <string name="categories">Categories</string>
+    <string name="trends">trends</string>
+    <string name="trending_videos">Trending Videos</string>
+    <string name="trending_audios">Trending Audios</string>
+    <string name="hot_amp_popular_videos_on_streamit"><![CDATA[Hot & Popular Videos On MyChurch]]></string>
+    <string name="hot_trending_audios_on_streamit"><![CDATA[Hot & Trending Audios On MyChurch]]></string>
+    <string name="no_playlist_created">You have not created any playlist.</string>
+    <string name="my_bookmarks">My Bookmarks</string>
+    <string name="no_videos_found">No Videos Found</string>
+    <string name="no_audios_found">No Audios Found</string>
+    <string name="no_trending_videos">No Trending Videos</string>
+    <string name="no_trending_audios">No Trending Audios</string>
+    <string name="title_activity_categories">CategoriesActivity</string>
+    <string name="category">Category</string>
+    <string name="media_tracks"> Media Track(s)</string>
+    <string name="views">View(s)</string>
+    <string name="forgot_your_login_details_get_help_signing_in">Forgot your login details? Get help signing in.</string>
+    <string name="dont_have_an_account_sign_up">Dont have an account? Sign up</string>
+    <string name="log_in">Log In</string>
+    <string name="email_address">Email Address</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="full_name">Full Name</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="create_account_for_free">Get Started</string>
+
+    <string name="facebook_app_id">499436487518798</string>
+    <string name="fb_login_protocol_scheme">fb499436487518798</string>
+    <string name="social_login_error">We were unable to fetch your account details, please try again later.</string>
+    <string name="or_login_with">OR LOGIN WITH</string>
+    <string name="guest_user">Guest User</string>
+    <string name="live_streams">Live Tv</string>
+    <string name="livestreams">LiveTV</string>
+    <string name="live_video_streams">Live TV Channels</string>
+    <string name="no_live_streams">No LiveTV Channels</string>
+    <string name="suggested_livetv_channels">Suggested LiveTv Channels</string>
+    <string name="live_tv_subscription_alert">You need to subscribe before you can watch this LiveTv Channel</string>
+    <string name="guest_email">Guest@envisionaps.com</string>
+
+    <string name="srn_drawer_open">Open</string>
+    <string name="srn_drawer_close">Close</string>
+
+    <string name="srn_ex_no_menu_view">No view for menu provided. You must either call .withMenuView(View) or pass a valid resource id to .withMenuLayout(int)</string>
+    <string name="srn_ex_bad_content_view">Your content view must contain exactly one child. Make sure you call inject() after setContentView().</string>
+    <string name="video_amp_audio_messages"><![CDATA[Video & Audio Messages]]></string>
+    <string name="all_messages">All Messages</string>
+    <string name="radio_station_not_available">Radio Station is not available at the moment</string>
+    <string name="livestreams_not_available">LiveStreaming not available at the moment</string>
+    <string name="notes">Notes</string>
+    <string name="today">Today</string>
+    <string name="devotionals">Devotionals</string>
+    <string name="bible">Bible</string>
+    <string name="events">Events</string>
+    <string name="cannot_load_devotionals_at_the_moment">Cannot load devotionals at the moment</string>
+    <string name="no_devotionals">No devotionals to display</string>
+    <string name="cannot_load_events">Cannot load events at the moment</string>
+    <string name="no_events_to_display">No Events to display</string>
+    <string name="inbox">Inbox</string>
+    <string name="cannot_load_this_content">Cannot load this content</string>
+    <string name="new_message">New Message</string>
+    <string name="new_event">New Event</string>
+    <string name="new_livestreaming">New LiveStreaming</string>
+    <string name="versions">Versions</string>
+    <string name="read">Read</string>
+
+    <string name="download_bible_versions">Download Bible Versions</string>
+    <string name="there_is_no_bible_data_to_display_click_on_the_button_below_to_download_atleast_one_bible_version">There is no bible data to display, click on the button below to download atleast one bible version.</string>
+    <string name="downloaded_progress">Downloaded (%d/%d)</string>
+    <string name="version_download">Version Download in progress</string>
+    <string name="version_download_hint">Bible Version download job is in progress. Do you wish to cancel the ongoing download?</string>
+    <string name="old_testament">Old</string>
+    <string name="new_testament">New</string>
+
+    <string-array name="bible_versions">
+        <item>KJV</item>
+        <item>MESSAGE</item>
+        <item>NIV</item>
+        <item>NKJV</item>
+        <item>AMPLIFIED</item>
+        <item>NLT</item>
+        <item>NRSV</item>
+    </string-array>
+
+    <string-array name="bible_version_titles">
+        <item>King James Version</item>
+        <item>The Message Bible</item>
+        <item>New International Version</item>
+        <item>New King James Version</item>
+        <item>Amplified Bible</item>
+        <item>New Living Translation</item>
+        <item>New Revised Standard Version</item>
+    </string-array>
+
+    <string-array name="bible_version_descriptions">
+        <item>An English translation of the Christian Bible for the Church of England.</item>
+        <item>Bible in Contemporary Language is a highly idiomatic translation by Eugene H.</item>
+        <item>First published in 1978 by Bible scholars using the earliest, highest quality manuscripts available.</item>
+        <item>English translation of the Bible first published in 1982 by Thomas Nelson.</item>
+        <item>English language translation of the Bible produced jointly by Zondervan and The Lockman Foundation.</item>
+        <item>A revision of The Living Bible, the project evolved into a new English translation from Hebrew and Greek texts.</item>
+        <item>Published in 1989 by the National Council of Churches. It is a revision of the Revised Standard Version.</item>
+    </string-array>
+
+
+    <string-array name="bible_version_names">
+        <item>KJV</item>
+        <item>MSG</item>
+        <item>NIV</item>
+        <item>NKJV</item>
+        <item>AMP</item>
+        <item>NLT</item>
+        <item>NRSV</item>
+    </string-array>
+
+    <string name="coin_purchase_history">Coins Purchase History</string>
+    <string name="could_not_process_media_purchase">Could not process message purchase at the moment, please try again later.</string>
+    <string name="purchased_messages">Purchased Messages</string>
+    <string name="purchase_coins">Purchase Coins</string>
+    <string name="coins_balance">Coins Balance</string>
+    <string name="title_activity_notes">NotesActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="my_notes">My Notes</string>
+    <string name="new_note">New Note</string>
+    <string name="enter_note_title_hint">Enter a title to save this note!!</string>
+    <string name="delete_noe">Delete Note</string>
+    <string name="delete_note_hint">Do you wish to delete this note? This action cannot be undone!!!</string>
+    <string name="note_welcome_text">No notes found.\n To add a new note,\n Tap on the plus icon below.</string>
+    <string name="search_notes_empty_hint">No notes found.</string>
+    <string name="discard_changes">Discard Changes</string>
+    <string name="discard_changes_hint">Do you wish to discard all changes you have made and close this activity?</string>
+    <string name="create_note">Add a new note</string>
+    <string name="twitter_page">Twitter Page</string>
+    <string name="youtube_page">Youtube Page</string>
+    <string name="instagram_page">Instagram Page</string>
+    <string name="facebook_page">Facebook Page</string>
+    <string name="bible_download_hint">This action will be performed in the background, we will notify you when the bible version is done downloading.</string>
+    <string name="bible_download_hint_error">For a smooth download experience, please allow the first download to finish before you start a new one</string>
+    <string name="read_chapter">Read Chapter</string>
+    <string name="highlights">Highlights</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="highlighted_verses">Highlighted Verses</string>
+    <string name="stop_reading">Stop Reading</string>
+    <string name="color_picker_default_title">Select a Color</string>
+    <!-- Content description for a color square. -->
+    <string name="color_swatch_description">Color <xliff:g example="14" id="color_index">%1$d</xliff:g></string>
+    <!-- Content description for a selected color square. -->
+    <string name="color_swatch_description_selected">Color <xliff:g example="14" id="color_index">%1$d</xliff:g> selected</string>
+    <string name="tomato">Tomato</string>
+    <string name="tangerine">Tangerine</string>
+    <string name="banana">Banana</string>
+    <string name="basil">Basil</string>
+    <string name="sage">Sage</string>
+    <string name="peacock">Peacock</string>
+    <string name="blueberry">Blueberry</string>
+    <string name="lavender">Lavender</string>
+    <string name="grape">Grape</string>
+    <string name="flamingo">Flamingo</string>
+    <string name="graphite">Graphite</string>
+    <string name="default_color">Default color</string>
+    <string name="search_highlighted_verses">Search Highlighted Verses</string>
+    <string name="remove_highlight">Remove highlight</string>
+    <string name="remove_highlight_hint">Do you want to remove this bible verse from your highlighted verses?</string>
+    <string name="grant_permisiion_hint">You need to grant permission before you can download any bible version</string>
+    <string name="bible_grant_permission_hint">We need you to grant us permission to download bible versions to your device</string>
+    <string name="just_a_second">Just a minute</string>
+    <string name="reload_bible">Reload Bible</string>
+    <string name="reload_bible_hint">download was successful, reload bible layout to show this version now.</string>
+
+    <string name="church_social">Church Social</string>
+    <string name="trending_social">Trending</string>
+    <string name="social_profile">Profile</string>
+    <string name="social_login_hint">You need to be logged in to be able to access the social features of mychurch app.</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="update_profile_hint">To get started, please update your profile page, this will help us in connecting you with other people.</string>
+    <string name="current_location">Current Location</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="qualification">Qualification</string>
+    <string name="about_me">About Me</string>
+    <string name="gender">Gender</string>
+    <string name="social_pages">Social Pages</string>
+    <string name="facebook">Facebook Profile Link</string>
+    <string name="twitter">Twitter Profile Link</string>
+    <string name="linkedln">linkedln Profile Link</string>
+    <string name="worship_hymns">Worship/Hymns</string>
+    <string name="donate">Donate</string>
+    <string name="our_website">Our Website</string>
+    <string name="hymns">Hymns</string>
+    <string name="website">Website</string>
+    <string name="subscription_method">Subscription Method</string>
+    <string name="choose_subscription_method">Choose your preferred subscription method</string>
+    <string name="coupon_verify_error">We cannot verify the coupon code. Please make sure you have a stable data connection.</string>
+    <string name="title_activity_hymns">HymnsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="added_to_bookmarks">Added to bookmarks</string>
+    <string name="removed_from_bookmarks">Removed from bookmarks</string>
+    <string name="bookmarked_hymns">Bookmarked Hymns</string>
+
+    <string name="timeout_error">Couldnt communicate with our server, please try again</string>
+    <string name="donate_with">Donate With</string>
+    <string name="donations_to_my_church">Donate To MyChurch</string>
+    <string name="invalid_amount_hint">Amount to fund should not be less than 100</string>
+    <string name="enter_a_valid_expiry_date">Please enter a valid expiry date.</string>
+    <string name="fill_all_fields_hint">You must fill all the fields before you can make a payment.</string>
+    <string name="invalid_card_hint">You have entered an invalid card details.</string>
+
+    <string name="required_fields">The following fields are required:\n Full Names \n Avatar \n Gender
+        \n Phone Number \n Date of birth \n Location</string>
+    <string name="follow">Follow</string>
+    <string name="error_occured_updating_user">An error occured while updating your details, please click to retry.</string>
+    <string name="search_for_people">Search for people</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="new_post">New Post</string>
+    <string name="select_images">Select Images</string>
+    <string name="select_videos">Select Videos</string>
+    <string name="upload_files_size_hint">Media Files cannot be more than 10</string>
+    <string name="share_you_thoughts">Share you thoughts</string>
+    <string name="post_visibility">Post Visibility</string>
+    <string name="radio">Radio</string>
+    <string name="in_progress">In Progress</string>
+    <string name="processing_post_request">We are currently processing your post request, please wait for it to finish before requesting a new one.</string>
+    <string name="post_request_error">We were unable to complete your current post request, please click to retry.</string>
+    <string name="single_file_limit_info">One of the files you added exceeded the upload size limit for a single file which is</string>
+    <string name="post_request_failed">Post request Failed.</string>
+    <string name="successful_post_request_info">Your post request was successful, tap to view post now.</string>
+    <string name="processing_post_request_info">Processing your post request.</string>
+    <string name="post_request_in_progress">Post request in progress, check the notification bar for success or error messages.</string>
+    <string name="post_request_success_msg">Your post request was successful, click on the button below to see your post now.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edited">Edited</string>
+    <string name="post_reactions_error_hint">Cannot process post reactions at the moment.</string>
+    <string name="pin_post_eeror_hint">You need a network connection to pin this post</string>
+    <string name="edit_post">Edit</string>
+    <string name="delete_post">Delete</string>
+    <string name="edit_post_error_hint">Cannot edit posts at the moment</string>
+    <string name="delete_post_hint">Delete Post</string>
+    <string name="delete_post_long_hint">Do you wish to delete this post? Please note that deleted posts might still show in other users feeds.</string>
+    <string name="delete_post_error_hint">Cannot delete this post at the moment</string>
+    <string name="user_profile">User Profile</string>
+    <string name="contact">Contact</string>
+    <string name="bio">Bio</string>
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="edit_user_profile">Edit Profile</string>
+    <string name="could_not_process_action_hint">Could not process requested action at the moment</string>
+    <string name="view_profile">View Profile</string>
+    <string name="my_pins">My Pins</string>
+    <string name="view_pinned_posts">View Pinned Posts</string>
+    <string name="hide_my_phone_number_from_users">Show my phone number to users</string>
+    <string name="show_my_full_date_of_birth_to_people_viewing_my_profile">Show my full date of birth to people viewing my profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="notify_me_when_user_follows_me">Notify me when a user follows me</string>
+    <string name="notify_me_when_users_comment_on_my_post">Notify me when users comment on my post</string>
+    <string name="notify_me_when_users_like_my_post">Notify me when users like my post</string>
+    <string name="update_settings">Update Settings</string>
+    <string name="my_pinned_posts">My Pins</string>
+    <string name="post_likes">Post Likes</string>
+    <string name="likes">Likes</string>
+    <string name="like">Like</string>
+    <string name="my">"My "</string>
+    <string name="view_post">View Post</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="google_pay_not_available">Google pay is not available on this device</string>
+    <string name="logged_in_error_hint">You need to be logged in to access this features</string>
+
+
+</resources>

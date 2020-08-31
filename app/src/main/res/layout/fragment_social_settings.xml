@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/material_grey_200"
+    android:orientation="vertical">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/circularbordersolid"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/profile"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <apps.envision.mychurch.utils.CircleImageView
+            android:id="@+id/user_avatar"
+            android:layout_marginEnd="15dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar"/>
+
+
+        <LinearLayout
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <apps.envision.mychurch.ui.fonts.OpensSansBoldTextView
+                android:id="@+id/name"
+                android:text="@string/app_name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <apps.envision.mychurch.ui.fonts.OpenSansRegularTextView
+                android:text="@string/view_profile"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_marginEnd="5dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:tint="@color/material_blue_grey_700"
+            android:src="@drawable/ic_navigate_next_white_24dp"/>
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/my_pins"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/circularbordersolid">
+
+
+            <ImageView
+                android:layout_marginEnd="15dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/circular_grey_bordersolid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:tint="@color/colorAccent"
+                android:src="@drawable/pin_outline"/>
+
+
+            <LinearLayout
+                android:layout_marginStart="65dp"
+                android:layout_marginEnd="50dp"
+                android:layout_alignParentStart="true"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <apps.envision.mychurch.ui.fonts.OpensSansBoldTextView
+                    android:text="@string/my_pins"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <apps.envision.mychurch.ui.fonts.OpenSansRegularTextView
+                    android:text="@string/view_pinned_posts"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_marginEnd="5dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/material_blue_grey_700"
+                android:src="@drawable/ic_navigate_next_white_24dp"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!--Contact Details-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/circularbordersolid"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp">
+
+
+            <apps.envision.mychurch.ui.fonts.OpenSansRegularTextView
+                android:id="@+id/update_settings"
+                android:textSize="15sp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/oval_circle_background"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:text="@string/update_settings"
+                android:textColor="@color/black"
+                android:layout_width="150dp"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <apps.envision.mychurch.ui.fonts.QuickSandsBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/phone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp">
+
+                <LinearLayout
+                    android:layout_marginEnd="50dp"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <apps.envision.mychurch.ui.fonts.OpensSansBoldTextView
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:text="@string/phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <apps.envision.mychurch.ui.fonts.OpenSansRegularTextView
+                        android:text="@string/hide_my_phone_number_from_users"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/phone_toggle"
+                    android:layout_marginEnd="0dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dob_layout"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp">
+
+
+
+                <LinearLayout
+                    android:layout_marginEnd="50dp"
+                    android:layout_alignParentStart="true"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <apps.envision.mychurch.ui.fonts.OpensSansBoldTextView
+                        android:text="@string/date_of_birth"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <apps.envision.mychurch.ui.fonts.OpenSansRegularTextView
+                        android:text="@string/show_my_full_date_of_birth_to_people_viewing_my_profile"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/dob_toggle"
+                    android:layout_marginEnd="0dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <apps.envision.mychurch.ui.fonts.QuickSandsBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notifications"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/follow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp">
+
+                <apps.envision.mychurch.ui.fonts.OpenSansRegularTextView
+                    android:layout_marginEnd="50dp"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/notify_me_when_user_follows_me"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/follow_notify_toggle"
+                    android:layout_marginEnd="0dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/comment_layout"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp">
+
+                <apps.envision.mychurch.ui.fonts.OpenSansRegularTextView
+                    android:layout_marginEnd="50dp"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/notify_me_when_users_comment_on_my_post"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/comment_notify_toggle"
+                    android:layout_marginEnd="0dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/like_layout"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp">
+
+                <apps.envision.mychurch.ui.fonts.OpenSansRegularTextView
+                    android:layout_marginEnd="50dp"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/notify_me_when_users_like_my_post"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/like_notify_toggle"
+                    android:layout_marginEnd="0dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

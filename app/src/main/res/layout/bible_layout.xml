@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+        android:id="@+id/content"
+        android:textStyle="bold"
+        android:layout_gravity="start|center"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+            android:id="@+id/amp"
+            android:textStyle="bold"
+            android:text="AMP"
+            android:layout_gravity="start|center"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+            android:id="@+id/kjv"
+            android:textStyle="bold"
+            android:text="KJV"
+            android:layout_gravity="start|center"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+            android:id="@+id/msg"
+            android:textStyle="bold"
+            android:text="MSG"
+            android:layout_gravity="start|center"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+            android:id="@+id/nkjv"
+            android:textStyle="bold"
+            android:text="NKJV"
+            android:layout_gravity="start|center"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+            android:id="@+id/nrsv"
+            android:textStyle="bold"
+            android:text="NRSV"
+            android:layout_gravity="start|center"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+            android:id="@+id/niv"
+            android:textStyle="bold"
+            android:text="NIV"
+            android:layout_gravity="start|center"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+            android:id="@+id/nlt"
+            android:textStyle="bold"
+            android:text="NLT"
+            android:layout_gravity="start|center"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/bible_container"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <HorizontalScrollView
+        android:id="@+id/bible_read_filter"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.ChipGroup
+            app:chipSpacingHorizontal="0dp"
+            app:singleSelection="false"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.google.android.material.chip.Chip
+                android:id="@+id/version"
+                app:chipBackgroundColor="@color/primary_dark"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/book"
+                app:chipBackgroundColor="@color/material_green_500"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:text="Genesis" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chapter"
+                app:chipBackgroundColor="@color/material_blue_grey_700"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:text="Chapter 1" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/font_chip"
+                app:chipBackgroundColor="@color/material_teal_500"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:text="Font(17)" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/search_filter_layout"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/search_version"
+                app:chipBackgroundColor="@color/primary_dark"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/old_testament"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layout_marginStart="15dp"
+                android:text="@string/old_testament"/>
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/new_testament"
+                android:layout_marginStart="15dp"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_testament"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/current_chapter"
+                android:layout_marginStart="15dp"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genesis only"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

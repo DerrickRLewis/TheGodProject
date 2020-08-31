@@ -1,0 +1,14 @@
+<apps.envision.mychurch.libs.pullrefresh.PullRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pullRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</apps.envision.mychurch.libs.pullrefresh.PullRefreshLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/thumbnail_1"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:lottie_autoPlay="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        app:lottie_loop="false"
+        android:layout_centerInParent="true"
+        app:lottie_repeatCount="3"
+        app:lottie_rawRes="@raw/bible"/>
+
+    <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+        android:layout_below="@+id/thumbnail_1"
+        android:id="@+id/no_bible"
+        android:layout_centerInParent="true"
+        android:text="No Bible Data"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/material_blue_grey_700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+        android:layout_below="@+id/no_bible"
+        android:id="@+id/no_bible_description"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/material_blue_grey_500"
+        android:text="@string/there_is_no_bible_data_to_display_click_on_the_button_below_to_download_atleast_one_bible_version"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_below="@+id/no_bible_description"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/download_bible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/duo_shape_rectangled_rounded_color_red"
+        android:gravity="center"
+        android:minWidth="@android:dimen/thumbnail_width"
+        android:padding="8dp"
+        android:text="Download Bible"
+        android:textAllCaps="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"/>
+
+
+
+</RelativeLayout>

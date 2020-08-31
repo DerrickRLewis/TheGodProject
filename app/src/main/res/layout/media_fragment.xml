@@ -1,0 +1,16 @@
+<apps.envision.mychurch.libs.pullrefresh.PullRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pullRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- A RecyclerView to display list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"/>
+
+</apps.envision.mychurch.libs.pullrefresh.PullRefreshLayout>

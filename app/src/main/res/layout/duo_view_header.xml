@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_marginTop="32dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="32dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_account_circle_black_24dp" />
+
+    <LinearLayout
+        android:id="@+id/account_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+        android:id="@+id/duo_view_header_text_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:maxLength="80"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"/>
+
+    <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+        android:id="@+id/duo_view_header_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/duo_view_header_text_title"
+        android:text="Manager"
+        android:textSize="13sp"
+        android:maxLength="80"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/duo_view_header_border"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/account_layout"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/white"/>
+</RelativeLayout>

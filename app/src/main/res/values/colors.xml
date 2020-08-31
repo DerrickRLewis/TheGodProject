@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="colorPrimary">@color/material_pink_500</color>
+    <color name="primary">@color/material_pink_500</color>
+    <color name="colorPrimaryDark">@color/material_pink_700</color>
+
+   <!-- <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+
+    <color name="primary">#6200EE</color> !-->
+
+    <color name="primary_dark">@color/material_pink_700</color>
+    <color name="secondaryColor">#303F9F</color>
+    <color name="fadedcolorPrimary">#103F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="accent">#FF4081</color>
+    <color name="black">#CC000000</color>
+    <color name="white">#ffff</color>
+    <color name="transparent_white">#B3ffffff</color>
+    <color name="deep_black">#000000</color>
+    <color name="black_transparent">#40000000</color>
+    <color name="black_trans80">#33000000</color>
+
+    <color name="darkColorPrimary">#1e2756</color>
+    <color name="darkColorPrimaryDark">#141831</color>
+    <color name="darkColorAccent">#2aac4b</color>
+
+    <color name="backgroundTransparent1">#401670b5</color>
+    <color name="backgroundTransparent2">#40bd3926</color>
+    <color name="backgroundTransparent3">#40378e43</color>
+    <color name="backgroundTransparent4">#40362e8a</color>
+    <color name="backgroundTransparent5">#40fdd500</color>
+    <color name="backgroundTransparent6">#4000aff0</color>
+    <color name="backgroundTransparent7">#4033429a</color>
+
+    <integer-array name="material_color">
+        <item>@color/material_purple_700</item>
+        <item>@color/material_blue_700</item>
+        <item>@color/material_green_700</item>
+        <item>@color/material_orange_700</item>
+        <item>@color/material_pink_700</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/material_light_green_700</item>
+        <item>@color/colorAccent</item>
+        <item>@color/material_lime_700</item>
+        <item>@color/material_teal_700</item>
+        <item>@color/material_indigo_700</item>
+        <item>@color/material_pink_700</item>
+        <item>@color/material_blue_700</item>
+        <item>@color/material_green_700</item>
+        <item>@color/material_orange_700</item>
+        <item>@color/material_pink_700</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/material_light_green_700</item>
+        <item>@color/colorAccent</item>
+        <item>@color/material_lime_700</item>
+        <item>@color/material_teal_700</item>
+        <item>@color/material_pink_700</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/material_light_green_700</item>
+        <item>@color/colorAccent</item>
+        <item>@color/material_lime_700</item>
+        <item>@color/material_teal_700</item>
+        <item>@color/material_indigo_700</item>
+        <item>@color/material_pink_700</item>
+        <item>@color/material_blue_700</item>
+        <item>@color/material_green_700</item>
+        <item>@color/material_orange_700</item>
+        <item>@color/material_pink_700</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/material_light_green_700</item>
+    </integer-array>
+
+    <!--chip colors -->
+    <color name="colorChipBackground">#e0e0e0</color>
+    <color name="colorChipBackgroundClicked">#424242</color>
+    <color name="colorChipText">#424242</color>
+    <color name="colorChipTextClicked">#F5F5F5</color>
+    <color name="colorChipCloseInactive">#757575</color>
+    <color name="colorChipCloseClicked">#F5F5F5</color>
+    <!-- end chip colors -->
+
+    <array name="wizards_color">
+        <item>@color/colorPrimary</item>
+        <item>@color/material_purple_700</item>
+        <item>@color/material_orange_700</item>
+        <item>@color/material_red_700</item>
+    </array>
+
+    <array name="refresh_color_scheme">
+        <item>@color/colorPrimary</item>
+        <item>@color/material_teal_700</item>
+        <item>@color/material_purple_700</item>
+        <item>@color/colorAccent</item>
+    </array>
+
+    <!--toast's text colors-->
+    <color name="colorInfo">#29B6F6</color>
+    <color name="colorSuccess">#66BB6A</color>
+    <color name="colorWarning">#FFA726</color>
+    <color name="colorError">#EF5350</color>
+
+    <color name="tomato">#d50000</color>
+    <color name="tangerine">#f4511e</color>
+    <color name="banana">#f6bf26</color>
+    <color name="basil">#0b8043</color>
+    <color name="sage">#33b679</color>
+    <color name="peacock">#039be5</color>
+    <color name="blueberry">#3f51b5</color>
+    <color name="lavender">#7986cb</color>
+    <color name="grape">#8e24aa</color>
+    <color name="flamingo">#e67c73</color>
+    <color name="graphite">#616161</color>
+
+    <color name="counter_bg">@color/material_pink_500</color>
+    <color name="counter_color">#FFF</color>
+    <color name="selector_color">#000</color>
+    <color name="place_holder_color">#F0F0F0</color>
+    <color name="ripple_color">#dddddd</color>
+    <color name="transparent_selected">#80ebf5ff</color>
+    <color name="toolbar_bg">@color/material_pink_500</color>
+    <color name="background">#ffffff</color>
+    <color name="done">#ffffff</color>
+    <color name="change_album_color">#CAC9C9</color>
+    <color name="camera_icon_color">#000</color>
+    <color name="camera_text_color">#000</color>
+    <color name="album_arrow_color">#fff</color>
+    <color name="permission_alert_bg">#c62828</color>
+    <color name="permission_alert_color">#FFF</color>
+</resources>

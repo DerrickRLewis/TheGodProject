@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@color/material_grey_200"
+    android:scrollbarSize="1dp"
+    android:scrollbars="vertical"
+    android:id="@+id/scrollView">
+<LinearLayout
+    android:padding="10dp"
+    android:minHeight="600dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/material_grey_200">
+
+    <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+        android:id="@+id/carousel"
+        app:showTopShadow="true"
+        app:topShadowAlpha="0.6"
+        app:topShadowHeight="32dp"
+        app:showBottomShadow="true"
+        app:bottomShadowAlpha="0.6"
+        app:bottomShadowHeight="64dp"
+        app:showCaption="true"
+        app:captionMargin="0dp"
+        app:captionTextSize="14sp"
+        app:showIndicator="true"
+        app:indicatorMargin="0dp"
+        app:showNavigationButtons="true"
+        app:imageScaleType="centerCrop"
+        app:carouselBackground="#333333"
+        app:imagePlaceholder="@drawable/image"
+        app:itemLayout="@layout/item_carousel"
+        app:imageViewId="@id/img"
+        app:previousButtonLayout="@layout/previous_button_layout"
+        app:previousButtonId="@id/btn_previous"
+        app:previousButtonMargin="4dp"
+        app:nextButtonLayout="@layout/next_button_layout"
+        app:nextButtonId="@id/btn_next"
+        app:nextButtonMargin="4dp"
+        app:carouselType="BLOCK"
+        app:scaleOnScroll="false"
+        app:scalingFactor="0.15"
+        app:autoWidthFixing="true"
+        app:autoPlay="true"
+        app:autoPlayDelay="3000"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/go_premium"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardMaxElevation="0dp"
+        app:cardElevation="0dp"
+        app:contentPadding="0dp"
+        app:contentPaddingBottom="0dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@drawable/gradient_red_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                android:text="@string/start_subscription"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                android:text="@string/start_subscription_hint"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="@dimen/_8dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/material_deep_purple_700"
+                card_view:cardCornerRadius="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/website"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/website"
+                        app:tint="@color/white"
+                        android:layout_weight="1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"/>
+
+                    <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                        android:text="@string/website"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="@dimen/_8dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                app:cardBackgroundColor="@color/material_green_700"
+                card_view:cardCornerRadius="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/donate"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:src="@drawable/give"
+                        app:tint="@color/white"
+                        android:layout_weight="1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"/>
+
+                    <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                        android:text="@string/donate"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="@dimen/_8dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/material_teal_700"
+                card_view:cardCornerRadius="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/hymns"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/hymns"
+                        app:tint="@color/white"
+                        android:layout_weight="1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"/>
+
+                    <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                        android:text="@string/hymns"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="@dimen/_8dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                app:cardBackgroundColor="@color/material_blue_700"
+                card_view:cardCornerRadius="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/go_social"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:src="@drawable/give"
+                        app:tint="@color/white"
+                        android:layout_weight="1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"/>
+
+                    <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                        android:text="Go Social"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="0dp"
+        android:minHeight="130dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/messages"
+            app:cardElevation="@dimen/_8dp"
+            card_view:cardCornerRadius="0dp"
+            app:cardCornerRadius="0dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/livestream"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <View
+                    android:background="@color/transparent_white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+
+                <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/categories"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/videos"
+            app:cardElevation="@dimen/_8dp"
+            card_view:cardCornerRadius="0dp"
+            android:layout_marginStart="8dp"
+            app:cardCornerRadius="0dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_one"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/messages"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <View
+                    android:background="@color/transparent_white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+
+                <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/videos"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/audios"
+            app:cardElevation="@dimen/_8dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            card_view:cardCornerRadius="0dp"
+            app:cardCornerRadius="0dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_seven"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/sermons"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <View
+                    android:background="@color/transparent_white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+
+                <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/audios"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:padding="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/livestreams"
+                app:cardElevation="@dimen/_8dp"
+                app:cardCornerRadius="0dp"
+                android:layout_marginStart="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_four"
+                        android:src="@drawable/livestream"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <View
+                        android:background="@color/transparent_white"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+                    <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:text="LiveStreams"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bible"
+                app:cardElevation="@dimen/_8dp"
+                android:layout_marginStart="12dp"
+                card_view:cardCornerRadius="0dp"
+                app:cardCornerRadius="0dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_three"
+                        android:src="@drawable/bible"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <View
+                        android:background="@color/transparent_white"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+                    <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/bible"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_height="120dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/devotionals"
+                app:cardElevation="@dimen/_8dp"
+                app:cardCornerRadius="0dp"
+                android:layout_marginStart="0dp"
+                card_view:cardCornerRadius="0dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_six"
+                        android:src="@drawable/devotionals"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <View
+                        android:background="@color/transparent_white"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+                    <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/devotionals"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/notes"
+                app:cardElevation="@dimen/_8dp"
+                android:layout_marginStart="8dp"
+                card_view:cardCornerRadius="0dp"
+                app:cardCornerRadius="0dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_two"
+                        android:src="@drawable/notes"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+
+                    <View
+                        android:background="@color/transparent_white"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+                    <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/notes"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/radio"
+                app:cardElevation="@dimen/_8dp"
+                app:cardCornerRadius="0dp"
+                android:layout_marginStart="8dp"
+                card_view:cardCornerRadius="0dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/image_five"
+                        android:src="@drawable/radio"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <View
+                        android:background="@color/transparent_white"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+
+                    <apps.envision.mychurch.ui.fonts.RobotoBoldTextView
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/radio"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

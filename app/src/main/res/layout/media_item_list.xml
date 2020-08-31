@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="90dp"
+    android:clickable="false"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:id="@+id/itm_holder"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:layout_marginStart="8dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_centerInParent="true"
+            android:src="@drawable/play_icon"
+            android:tint="@color/colorAccent"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                android:id="@+id/category"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/material_grey_500"
+                android:textSize="12sp"
+                android:clickable="false"/>
+
+            <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                android:id="@+id/duration"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.00"
+                android:textColor="@color/material_grey_500"
+                android:textSize="12sp"
+                android:layout_marginEnd="15dp"/>
+
+        </LinearLayout>
+
+        <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+            android:id="@+id/title"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:clickable="false" />
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <apps.envision.mychurch.ui.fonts.RobotoRegularTextView
+                android:id="@+id/media_views"
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/material_grey_500"
+                android:textSize="12sp"
+                android:layout_marginEnd="5dp"/>
+
+            <ImageView
+                android:id="@+id/options"
+                android:layout_weight="1"
+                android:layout_marginEnd="-12dp"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/ic_more_vert_white_24dp"
+                android:tint="@color/material_grey_500" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/material_grey_200" />
+
+</LinearLayout>
