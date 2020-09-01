@@ -7,15 +7,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by RAY on 11/27/2015.
- */
+
 public class Constants {
 
-    public static String APP_DATABASE = "mychurch_db";//app database name
-    public static final String BASE_URL = "https://DOMAIN_NAME/"; //remote api url
-    public static final String BIBLE_DOWNLOAD_URL = "https://DOMAIN_NAME/uploads/"; //remote api url
-    public static String Terms_URL = "https://DOMAIN_NAME/terms"; //app terms url
+    public static String APP_DATABASE = "theGodProjectDb";//app database name
+    public static final String BASE_URL = "http://thegodproject.xyz/"; //remote api url
+    public static final String BIBLE_DOWNLOAD_URL = "http://thegodproject.xyz/uploads/"; //remote api url
+    public static String Terms_URL = "http://thegodproject.xyz/terms"; //app terms url
     public static final long ONE_DAY = TimeUnit.DAYS.toMillis(1);     // 1 day to milliseconds
     public static final long FIFTEEN_MINUTES = TimeUnit.MINUTES.toMillis(15);     // 15 minutes to milliseconds
 
