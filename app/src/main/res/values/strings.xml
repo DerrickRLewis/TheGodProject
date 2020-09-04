@@ -1,15 +1,15 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">MyChurch</string>
+    <string name="app_name">The God Project</string>
     <string name="download_path">.MyChurch</string>
 
-    <string name="onboarding_text_one">Welcome to MyChurch</string>
+    <string name="onboarding_text_one">The God Project</string>
     <string name="onboarding_text_two">Packed with Features</string>
     <string name="onboarding_text_three">Audio, Video \n &amp; Live Streaming</string>
     <string name="onboarding_text_four">Create Account</string>
 
-    <string name="onboarding_hint_one">Extend beyond the Sunday mornings &amp; the four walls of your church. Everything you need to communicate and engage with a mobile-focused world.</string>
-    <string name="onboarding_hint_two">We have brought together all of the top features that your church app must have. Events, Devotionals, Notifications, Notes and multi-version bible.</string>
-    <string name="onboarding_hint_three">Allow users across the globe watch videos, listen to audio messages and watch live streams of your church services.</string>
+    <string name="onboarding_hint_one">Extend beyond the Sunday mornings &amp; the four walls of your church. Stay connected and inspired in a mobile-focused world.</string>
+    <string name="onboarding_hint_two">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue lacus non felis mattis, sed euismod odio auctor. Events, Devotionals, Notifications, Notes and multi-version bible.</string>
+    <string name="onboarding_hint_three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue lacus non felis mattis, sed euismod odio auctor.</string>
     <string name="onboarding_hint_four">Start your journey to a never-ending worship experience.</string>
 
     <array name="letter_tile_colors">
@@ -186,7 +186,7 @@
     <!-- end settings -->
 
     <!-- feedback strings -->
-    <string name="app_email">envisionaps@gmail.com</string>
+    <string name="app_email">figure8dev@gmail.com</string>
     <string name="feedback_subject">Feedbacks and recommendations for this app.</string>
     <string name="developer_feedback">Developer feedback.</string>
     <!-- end feedback strings -->
@@ -310,8 +310,8 @@
     <string name="trends">trends</string>
     <string name="trending_videos">Trending Videos</string>
     <string name="trending_audios">Trending Audios</string>
-    <string name="hot_amp_popular_videos_on_streamit"><![CDATA[Hot & Popular Videos On MyChurch]]></string>
-    <string name="hot_trending_audios_on_streamit"><![CDATA[Hot & Trending Audios On MyChurch]]></string>
+    <string name="hot_amp_popular_videos_on_streamit"><![CDATA[Hot & Popular Videos On the GOD Project]]></string>
+    <string name="hot_trending_audios_on_streamit"><![CDATA[Hot & Trending Audios On the GOD Project]]></string>
     <string name="no_playlist_created">You have not created any playlist.</string>
     <string name="my_bookmarks">My Bookmarks</string>
     <string name="no_videos_found">No Videos Found</string>
