@@ -3,13 +3,13 @@
     <string name="download_path">.MyChurch</string>
 
     <string name="onboarding_text_one">The God Project</string>
-    <string name="onboarding_text_two">Packed with Features</string>
+    <string name="onboarding_text_two">About</string>
     <string name="onboarding_text_three">Audio, Video \n &amp; Live Streaming</string>
     <string name="onboarding_text_four">Create Account</string>
 
     <string name="onboarding_hint_one">Extend beyond the Sunday mornings &amp; the four walls of your church. Stay connected and inspired in a mobile-focused world.</string>
-    <string name="onboarding_hint_two">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue lacus non felis mattis, sed euismod odio auctor. Events, Devotionals, Notifications, Notes and multi-version bible.</string>
-    <string name="onboarding_hint_three">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer congue lacus non felis mattis, sed euismod odio auctor.</string>
+    <string name="onboarding_hint_two">Come and learn of us, and more of Jesus. There is plenty, good room, good preaching, good people, and good times.</string>
+    <string name="onboarding_hint_three">Events, Devotionals, Notifications, Notes and multi-version bible.</string>
     <string name="onboarding_hint_four">Start your journey to a never-ending worship experience.</string>
 
     <array name="letter_tile_colors">
@@ -152,7 +152,7 @@
     <string name="make_comment_error">Can\'t publish your comment at the moment</string>
     <string name="edit_comment_error">Can\'t edit your comment at the moment</string>
     <string name="delete_comment_error">Can\'t delete your comment at the moment</string>
-    <string name="report_comment_error">Can\'t report your comment at the moment</string>
+    <string name="report_comment_error">Can\'t  report your comment at the moment</string>
     <string name="like_media_error">Can\'t process media reactions at the moment</string>
     <string name="share_text"> Via MyChurch App. Download now at </string>
     <string name="share_app_text">Join the Video and Audio streaming platform that lets you watch and listen to millions of files from around the world. Download now at </string>

@@ -18,7 +18,7 @@ public class Constants {
     public static final long FIFTEEN_MINUTES = TimeUnit.MINUTES.toMillis(15);     // 15 minutes to milliseconds
 
     public interface STRIPE{
-        int PAYMENTS_ENVIRONMENT = WalletConstants.ENVIRONMENT_TEST; //change to WalletConstants.ENVIRONMENT_PRODUCTION when you are ready to publish your app
+        int PAYMENTS_ENVIRONMENT = WalletConstants.ENVIRONMENT_PRODUCTION; //change to WalletConstants.ENVIRONMENT_PRODUCTION when you are ready to publish your app
     }
 
     /**
